@@ -91,6 +91,10 @@ nav:
       - 'AI Infrastructure': modules/ia/components.md
       - 'Model Observability': modules/ia/iac.md
       - 'MLOps Automation': modules/ia/mlops.md
+      - 'RAG': modules/ia/rag.md
+      - 'MCP': modules/ia/mcp.md
+      - 'Sub Agents': modules/ia/sub-agents.md
+      - 'A2A': modules/ia/a2a.md
 
   - 'Engineering Blog':
       - blog/index.md  # El índice del blog se genera solo
