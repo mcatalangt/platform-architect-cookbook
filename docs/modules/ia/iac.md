@@ -1,1 +1,0 @@
-# IA - Infraestructure as code IaC
