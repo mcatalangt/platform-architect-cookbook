@@ -230,17 +230,19 @@ body,
 
 /* --- SIDEBAR MENU STYLE (APACHE AIRFLOW STYLE) --- */
 
-/* 1. Sidebar Background color (Full Height on Desktop) */
+/* 1. Sidebar Background color (Full Height using Flex Stretch) */
 @media screen and (min-width: 76.25em) {
     .md-sidebar--primary {
-        background-color: #276aae !important;
+        align-self: stretch !important;
+        height: auto !important;
+        background-color: #f8f9fa !important;
         border-right: 1px solid var(--md-default-fg-color--lightest) !important;
-        height: 100vh !important;
-        font-weight: 200 !important;
         padding-top: 1rem !important;
-        margin-top: 0 !important;
     }
-
+    .md-sidebar--primary .md-sidebar__scrollwrap {
+        height: 100% !important;
+    }
+    
     [data-md-color-scheme="slate"] .md-sidebar--primary {
         background-color: #202124 !important;
     }
@@ -284,23 +286,25 @@ body,
     color: #8ab4f8 !important;
 }
 
-/* 5. Section Headers (Like "REFERENCES") */
+/* 5. Section Headers (Like "REFERENCES") and Sidebar Title */
 .md-sidebar--primary .md-nav--primary>.md-nav__list>.md-nav__item--section>.md-nav__link,
 .md-sidebar--primary .md-nav__item--section>.md-nav__link,
-.md-sidebar--primary .md-nav__title {
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__title * {
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.75rem !important;
-    /* Título de sección más pequeño */
+    font-size: 0.75rem !important; /* Título de sección pequeño */
     line-height: 1.2 !important;
     letter-spacing: 0.05em;
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
+    white-space: normal !important; /* Permite que el título largo se acomode en varias líneas */
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section>.md-nav__link,
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title {
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title * {
     color: #ffffff !important;
 }
 
