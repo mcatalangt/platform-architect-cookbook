@@ -232,7 +232,7 @@ body,
 
 /* 1. Sidebar Background color */
 .md-sidebar--primary {
-    background-color: #f8f9fa !important;
+    background-color: #ffffff !important;
     border-right: 1px solid var(--md-default-fg-color--lightest) !important;
 }
 
@@ -243,9 +243,11 @@ body,
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
     color: #5f6368 !important;
+    font-size: 0.85rem !important; /* Letra más pequeña para los links */
     font-weight: 400 !important;
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    line-height: 1.4 !important;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
@@ -277,16 +279,20 @@ body,
 
 /* 5. Section Headers (Like "REFERENCES") */
 .md-sidebar--primary .md-nav--primary>.md-nav__list>.md-nav__item--section>.md-nav__link,
-.md-sidebar--primary .md-nav__item--section>.md-nav__link {
+.md-sidebar--primary .md-nav__item--section>.md-nav__link,
+.md-sidebar--primary .md-nav__title {
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.85em !important;
+    font-size: 0.75rem !important; /* Título de sección más pequeño */
+    line-height: 1.2 !important;
     letter-spacing: 0.05em;
     margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
 }
 
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section>.md-nav__link {
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section>.md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title {
     color: #ffffff !important;
 }
 
