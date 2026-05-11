@@ -75,19 +75,19 @@ markdown_extensions:
 nav:
   - Home: index.md
   
-  - 'Google SRE Standards (Core Infrastructure)':
+  - 'Base Layer (Core Infrastructure)':
       - 'Infrastructure as Code (IaC)': modules/sre/iac.md
       - 'Observability Stack': modules/sre/observability.md
       - 'Automation Playbooks (Toil Reduction)': modules/sre/automation.md
       - 'FinOps Infracots': modules/sre/findops.md
       - 'Security Best Practices Checkov': modules/sre/security.md
   
-  - 'Google Data Platform Standards (Data Reliability)':
+  - 'Data Layer (Data Platforms & Pipelines)':
       - 'Data Infrastructure': modules/data/iac.md
       - 'Data Observability': modules/data/observability.md
       - 'Security & Governance': modules/data/automation.md
   
-  - 'Google IA Platform Standards (MLOps & AI)':
+  - 'AI Layer (AI & MLOps)':
       - 'AI Infrastructure': modules/ia/components.md
       - 'RAG': modules/ia/rag.md
       - 'MCP': modules/ia/mcp.md
