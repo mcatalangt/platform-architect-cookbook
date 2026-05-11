@@ -1,6 +1,6 @@
-# Bienvenido a Platform Architect's Cookbook
+#Platform Architect's Cookbook
 
-Bienvenido a **Stack Kitchen** Recetas, arquitecturas e implementaciones probadas en batalla: desde los cimientos de Kubernetes hasta Inteligencia Artificial
+Bienvenido a **Stack Kitchen.**  Recetas, arquitecturas e implementaciones probadas en batalla, desde los cimientos de Kubernetes hasta Inteligencia Artificial.
 
 Diseñado para ingenieros que buscan agilidad, Stack Kitchen permite desplegar desde entornos de pruebas (Sandbox) hasta arquitecturas de **Alta Disponibilidad** (HA) en cuestión de minutos. 
 
