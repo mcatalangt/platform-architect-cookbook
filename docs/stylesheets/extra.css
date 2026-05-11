@@ -8,6 +8,11 @@
   --md-header-bg-color: #ffffff;
 }
 
+html, body, .md-typeset, .markdown-body, p, li, a, span { 
+    color: #b62626 !important; } 
+    
+
+
 /* Forzar que el título del sitio sea Azul Google */
 .md-header__title, .md-header__button {
     color: #115cbe !important;
