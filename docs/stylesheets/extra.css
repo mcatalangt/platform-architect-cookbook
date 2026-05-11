@@ -12,7 +12,10 @@ html, body, .md-typeset, .markdown-body, p, li, a, span {
     font-size: 14px !important;
     color: #797979 !important; } 
     
-
+.md-header__button.md-logo img {
+    height: 48px !important;
+    width: auto !important;
+}
 
 /* Forzar que el título del sitio sea Azul Google */
 .md-header__title, .md-header__button {
@@ -58,7 +61,7 @@ h1, h2, h3 {
 }
 
 /* (Opcional) Si el logo queda muy pegado al borde izquierdo en móvil */
-@media screen and (max-width: 90.1875em) {
+@media screen and (max-width: 76.1875em) {
     .md-header__button.md-logo {
         margin-left: 8px;
     }
