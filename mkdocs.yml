@@ -44,7 +44,7 @@ theme:
         name: Switch to light mode
 
   font:
-    text: Google Sans Text,Roboto,Arial,sans-serif
+    text: Roboto
     code: Roboto Mono
 # 3. PLUGINS (FUNCIONALIDADES EXTRA)
 plugins:

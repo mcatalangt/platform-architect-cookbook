@@ -18,6 +18,12 @@
   --md-default-fg-color--lightest: #dadce0;
 }
 
+[data-md-color-scheme="default"] {
+  --md-text-color: #000000;
+  --md-typeset-color: #000000;
+  --md-typeset-a-color: #1a73e8;
+}
+
 [data-md-color-scheme="slate"] {
   /* Google Cloud Color Palette - Dark Mode */
   --md-primary-fg-color: #202124;
@@ -37,26 +43,33 @@
 }
 
 /* Typography Base */
-body { 
-    font-family: "Google Sans Text", Roboto, Arial, sans-serif !important;
+body, .md-typeset { 
+    font-family: "Roboto", Arial, sans-serif !important;
+    color: #000000 !important;
 }
 
 /* Headings */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-family: "Roboto", Arial, sans-serif !important;
+    color: #000000 !important;
+}
 .md-typeset h1 {
     font-weight: 400;
-    color: #000000;
     letter-spacing: 0;
     margin-bottom: 1rem;
 }
 .md-typeset h2 {
     font-weight: 400;
-    color: #000000;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 .md-typeset h3 {
     font-weight: 500;
-    color: #000000;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
