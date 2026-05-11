@@ -2,9 +2,9 @@
 site_name: Platform Architect's Cookbook
 site_description: Centralized SRE & Data Engineering Standards
 site_author: Marco Tulio Catalán Funes
-site_url: https://mcatalangt.github.io/data-reliability-hub/
-repo_url: https://github.com/mcatalangt/data-reliability-hub
-repo_name: data-reliability-hub
+site_url: https://mcatalangt.github.io/platform-architect-cookbook/
+repo_url: https://github.com/mcatalangt/platform-architect-cookbook
+repo_name: platform-architect-cookbook
 
 # 2. TEMA (APARIENCIA)
 theme:
@@ -93,7 +93,7 @@ nav:
       - 'MCP': modules/ia/mcp.md
       - 'Sub Agents': modules/ia/sub-agents.md
       - 'A2A': modules/ia/a2a.md
-
+  - 
   - 'Personal Blog':
       - blog/index.md  # El índice del blog se genera solo
 
