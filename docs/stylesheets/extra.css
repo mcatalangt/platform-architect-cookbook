@@ -10,8 +10,8 @@
   --md-accent-bg-color: #ffffff;
   
   /* Text colors */
-  --md-text-color: #3c4043;
-  --md-typeset-color: #3c4043;
+  --md-text-color: #000000;
+  --md-typeset-color: #000000;
   --md-typeset-a-color: #1a73e8;
   
   /* Borders */
@@ -37,31 +37,26 @@
 }
 
 /* Typography Base */
-html, body, .md-typeset, .markdown-body, p, li, span { 
-    font-size: 15px !important;
+body { 
     font-family: "Google Sans Text", Roboto, Arial, sans-serif !important;
-    line-height: 1.6 !important;
 }
 
 /* Headings */
 .md-typeset h1 {
-    font-size: 2.25rem;
     font-weight: 400;
-    color: #202124;
+    color: #000000;
     letter-spacing: 0;
     margin-bottom: 1rem;
 }
 .md-typeset h2 {
-    font-size: 1.75rem;
     font-weight: 400;
-    color: #202124;
+    color: #000000;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 .md-typeset h3 {
-    font-size: 1.25rem;
     font-weight: 500;
-    color: #202124;
+    color: #000000;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
@@ -110,9 +105,9 @@ html, body, .md-typeset, .markdown-body, p, li, span {
 
 /* Buttons (Primary and Outline) */
 .md-typeset .md-button {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important; /* Increased from 0.875rem */
     font-weight: 500 !important;
-    padding: 0.5em 1.5em !important;
+    padding: 0.6em 1.5em !important;
     border-radius: 4px !important; 
     color: var(--md-accent-fg-color) !important;
     background-color: transparent !important;
