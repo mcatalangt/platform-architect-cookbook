@@ -57,6 +57,7 @@ plugins:
 markdown_extensions:
   - admonition             # Para notas de advertencia/info (cajas de colores)
   - attr_list              # Para listas con atributos personalizados
+  - md_in_html             # REQUIRED for grid cards
   - pymdownx.details       # Para secciones colapsables
   - pymdownx.superfences   # Para diagramas y código avanzado
   - toc:

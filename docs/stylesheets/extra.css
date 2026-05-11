@@ -1,115 +1,204 @@
 :root {
-  /* Forzar la barra superior (Header) a Blanco */
-  --md-primary-fg-color: #515458;
+  /* Google Cloud Color Palette - Light Mode */
+  --md-primary-fg-color: #ffffff;
   --md-primary-bg-color: #ffffff;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark: #f8f9fa;
   
-  /* Color del texto de la barra superior (Gris oscuro) */
-  --md-header-fg-color: #515458;
-  --md-header-bg-color: #ffffff;
+  --md-accent-fg-color: #1a73e8;
+  --md-accent-fg-color--transparent: rgba(26, 115, 232, 0.1);
+  --md-accent-bg-color: #ffffff;
+  
+  /* Text colors */
+  --md-text-color: #3c4043;
+  --md-typeset-color: #3c4043;
+  --md-typeset-a-color: #1a73e8;
+  
+  /* Borders */
+  --md-default-fg-color--lightest: #dadce0;
 }
 
-html, body, .md-typeset, .markdown-body, p, li, a, span { 
-    font-size: 14px !important;
-    color: #797979 !important; } 
-    
+[data-md-color-scheme="slate"] {
+  /* Google Cloud Color Palette - Dark Mode */
+  --md-primary-fg-color: #202124;
+  --md-primary-bg-color: #202124;
+  --md-primary-fg-color--light: #303134;
+  --md-primary-fg-color--dark: #171717;
+  
+  --md-accent-fg-color: #8ab4f8;
+  --md-accent-fg-color--transparent: rgba(138, 180, 248, 0.1);
+  --md-accent-bg-color: #202124;
+  
+  --md-text-color: #e8eaed;
+  --md-typeset-color: #e8eaed;
+  --md-typeset-a-color: #8ab4f8;
+  
+  --md-default-fg-color--lightest: #5f6368;
+}
+
+/* Typography Base */
+html, body, .md-typeset, .markdown-body, p, li, span { 
+    font-size: 15px !important;
+    font-family: "Google Sans Text", Roboto, Arial, sans-serif !important;
+    line-height: 1.6 !important;
+}
+
+/* Headings */
+.md-typeset h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #202124;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+}
+.md-typeset h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #202124;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.md-typeset h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #202124;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+    color: #e8eaed;
+}
+
+/* Header Styling */
+.md-header {
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+
+.md-header__title, .md-header__button {
+    color: #5f6368 !important;
+}
+[data-md-color-scheme="slate"] .md-header__title, 
+[data-md-color-scheme="slate"] .md-header__button {
+    color: #9aa0a6 !important;
+}
+
+/* Logo */
 .md-header__button.md-logo img {
-    height: 48px !important;
+    height: 32px !important;
     width: auto !important;
 }
 
-/* Forzar que el título del sitio sea Azul Google */
-.md-header__title, .md-header__button {
-    color: #115cbe !important;
-}
-
-/* Pestañas (Tabs) en blanco también */
-.md-tabs {
-    background-color: #ffffff !important;
-    color: #5f6368 !important;
-    border-bottom: 1px solid #dadce0;
-}
-
-/* Títulos H1, H2 azules */
-h1, h2, h3 {
-    color: #095bc7 !important;
-}
-
-/* Arreglo para que los iconos de búsqueda se vean en fondo blanco */
+/* Search Bar */
 .md-search__input {
     background-color: #f1f3f4 !important;
+    border-radius: 8px !important;
+    color: #202124 !important;
+}
+[data-md-color-scheme="slate"] .md-search__input {
+    background-color: #303134 !important;
+    color: #e8eaed !important;
 }
 
-/* --- AJUSTE DE TAMAÑO DEL LOGO --- */
-
-/* Apuntamos específicamente a la imagen dentro del botón del logo */
-.md-header__button.md-logo img {
-    /* 1. Altura: Aumenta este valor para hacerlo más grande.
-       El valor por defecto es pequeño (aprox 24px).
-       Prueba con 48px, 56px o incluso 64px. */
-    /*height: 80px !important; */
-    overflow: visible !important;
-    /* Le decimos que su altura se adapte al contenido */
-    height: 80px !important;
-    /* 2. Ancho automático: Esto asegura que el logo no se deforme */
-    width: auto !important;
-    margin-right: 2px !important;
-    /* 3. (Opcional) Ajuste vertical fino.
-       Si al agrandarlo se ve muy arriba o muy abajo respecto al texto,
-       descomenta la línea de abajo y juega con valores negativos (subir)
-       o positivos (bajar) de margen. */
-    /* margin-top: -4px !important; */
+/* Tabs */
+.md-tabs {
+    background-color: var(--md-primary-fg-color) !important;
+    color: var(--md-text-color) !important;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
 }
 
-/* (Opcional) Si el logo queda muy pegado al borde izquierdo en móvil */
-@media screen and (max-width: 76.1875em) {
-    .md-header__button.md-logo {
-        margin-left: 8px;
-    }
-}
-
-.md-typeset  .md-button {
-    /* 1. Reduce el tamaño del texto (por defecto es aprox 0.8rem) */
-    font-size: 0.7rem !important;
-    
-    /* 2. Reduce el espacio interno (Arriba/Abajo  Izquierda/Derecha) */
-    padding: 0.4em 1em !important;
-    
-    /* 3. Ajusta la altura de línea para que se vea más delgado */
-    line-height: 1.4 !important;
-    
-    /* 4. (Opcional) Si quieres esquinas más redondeadas */
+/* Buttons (Primary and Outline) */
+.md-typeset .md-button {
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    padding: 0.5em 1.5em !important;
     border-radius: 4px !important; 
-    color: #1a73e8 !important;
-    color-background: #ffffff !important;
-    border-width: 0.1em;
+    color: var(--md-accent-fg-color) !important;
+    background-color: transparent !important;
+    border: 1px solid var(--md-default-fg-color--lightest) !important;
+    letter-spacing: 0.25px;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
-/* Ajuste específico para el icono dentro del botón (para que no quede grande) */
+.md-typeset .md-button--primary {
+    background-color: var(--md-accent-fg-color) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+    color: #202124 !important;
+}
+
+.md-typeset .md-button:hover {
+    background-color: var(--md-accent-fg-color--transparent) !important;
+    border-color: var(--md-accent-fg-color) !important;
+}
+
+.md-typeset .md-button--primary:hover {
+    background-color: #174ea6 !important; /* Darker blue */
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+    background-color: #aecbfa !important; /* Lighter blue */
+}
+
 .md-button .twemoji {
-    height: 0.9em !important;
-    color: #1a73e8 !important;
-    color-background: #ffffff !important;
+    height: 1.2em !important;
+    vertical-align: -0.2em;
 }
 
-.md-button:hover {
-    background-color: #f6f6f6 !important;
+/* Grid Cards (Like Google Cloud Services Cards) */
+.md-typeset .cards > ul > li {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    box-shadow: none !important;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    background-color: var(--md-primary-fg-color);
+}
+.md-typeset .cards > ul > li:hover {
+    box-shadow: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15) !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .cards > ul > li:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 4px 8px 3px rgba(0,0,0,0.3) !important;
+}
+.md-typeset .cards > ul > li > hr {
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    margin: 1em -1em;
 }
 
+/* Admonitions */
+.md-typeset .admonition {
+    border-radius: 8px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    box-shadow: none;
+}
 .md-typeset .admonition.info > .admonition-title {
-    /* Esto le pone el mismo color pero muy clarito (10% opacidad) para que se vea elegante */
-    background-color: rgba(38, 171, 67, 0.1) !important;
-    color:#1a73e8 !important;
-    font-size: 0.7rem !important;
-    /* Asegura que el borde del título también coincida */
+    background-color: rgba(26, 115, 232, 0.05) !important;
+    color: #1a73e8 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.info > .admonition-title {
+    color: #8ab4f8 !important;
+}
+.md-typeset .admonition.info {
+    border-left: 4px solid #1a73e8 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition.info {
+    border-left: 4px solid #8ab4f8 !important;
 }
 
-.md-typeset .admonition.info, .md-typeset details.info{
-    border-color: #1a73e8 !important;
+/* Inline Code Blocks */
+.md-typeset code {
+    background-color: #f1f3f4;
+    color: #d93025; /* Google Red for code tags */
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+    font-size: 0.85em;
+}
+[data-md-color-scheme="slate"] .md-typeset code {
+    background-color: #303134;
+    color: #f28b82;
 }
 
-.md-typeset .info>.admonition-title:before, .md-typeset .info>summary:before {
-    background-color: #1a73e8;  !important;
-}   
-
+/* Tables */
 .table th:nth-child(1) { width: 20%; }
 .table th:nth-child(2) { width: 80%; }
