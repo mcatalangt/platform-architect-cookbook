@@ -251,7 +251,7 @@ body,
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
     color: #5f6368 !important;
-    font-size: 0.75rem !important; /* Letra aún más pequeña (12px) */
+    font-size: 0.65rem !important; /* Letra microscópica (10px) */
     font-weight: 400 !important; /* Peso normal para que sea legible en tamaño pequeño */
     padding-top: 0.2rem !important;
     padding-bottom: 0.2rem !important;
@@ -293,7 +293,7 @@ body,
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.65rem !important; /* Título súper pequeño (10px aprox) */
+    font-size: 0.55rem !important; /* Título ultra pequeño (9px) */
     line-height: 1.2 !important;
     letter-spacing: 0.05em;
     margin-top: 0.5rem !important;
