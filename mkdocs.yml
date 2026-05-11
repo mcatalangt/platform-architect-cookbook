@@ -93,7 +93,7 @@ nav:
       - 'MCP': modules/ia/mcp.md
       - 'Sub Agents': modules/ia/sub-agents.md
       - 'A2A': modules/ia/a2a.md
-  - 
+      
   - 'Personal Blog':
       - blog/index.md  # El índice del blog se genera solo
 
