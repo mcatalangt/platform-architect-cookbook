@@ -1,6 +1,6 @@
-# Bienvenido a Data Reliability Hub
+# Bienvenido a Platform Architect's Cookbook
 
-**Data Reliability Hub** es una biblioteca integral de módulos de :simple-terraform: [Terraform](https://www.terraform.io/), [Ansible](https://docs.ansible.com/#get_started) agnósticos a la nube/on-prem listos para producción.
+Bienvenido a **The Stack Kitchen** Recetas, arquitecturas e implementaciones probadas en batalla: desde los cimientos de Kubernetes hasta Inteligencia Artificial
 
 Diseñado para ingenieros que buscan agilidad, este hub permite desplegar desde entornos de pruebas (Sandbox) hasta arquitecturas de **Alta Disponibilidad** (HA) en cuestión de minutos. 
 
@@ -15,7 +15,7 @@ Es el "mapa" oficial mantenido por la **CNCF (Cloud Native Computing Foundation)
 
 En resumen, es la guía definitiva para pasar de servidores tradicionales a arquitecturas de microservicios, contenedores y automatización.
 
-Para **Data Reliability Hub**, el landscape se divide en capas clave:
+Para **The Platform Architect's Cookbook**, el landscape se divide en capas clave:
 
 ###1. Provisioning (infraestructura Core)
 
