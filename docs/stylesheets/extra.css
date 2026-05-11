@@ -290,11 +290,9 @@ body,
     color: #8ab4f8 !important;
 }
 
-/* 5. Section Headers (Like "REFERENCES") and Sidebar Title */
+/* 5. Section Headers (Like "REFERENCES") */
 .md-sidebar--primary .md-nav--primary>.md-nav__list>.md-nav__item--section>.md-nav__link,
-.md-sidebar--primary .md-nav__item--section>.md-nav__link,
-.md-sidebar--primary .md-nav__title,
-.md-sidebar--primary .md-nav__title * {
+.md-sidebar--primary .md-nav__item--section>.md-nav__link {
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
@@ -303,12 +301,16 @@ body,
     letter-spacing: 0.05em;
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
-    white-space: normal !important; /* Permite que el título largo se acomode en varias líneas */
+    white-space: normal !important;
 }
 
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section>.md-nav__link,
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title * {
+/* Ocultar completamente el título principal de la pestaña en la barra lateral */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__title * {
+    display: none !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section>.md-nav__link {
     color: #ffffff !important;
 }
 
