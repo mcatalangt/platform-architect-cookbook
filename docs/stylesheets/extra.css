@@ -251,12 +251,11 @@ body,
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
     color: #5f6368 !important;
-    font-size: 0.85rem !important;
-    /* Letra más pequeña para los links */
-    font-weight: 200 !important;
-    padding-top: 0.3rem !important;
-    padding-bottom: 0.3rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.75rem !important; /* Letra aún más pequeña (12px) */
+    font-weight: 400 !important; /* Peso normal para que sea legible en tamaño pequeño */
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    line-height: 1.3 !important;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
@@ -294,7 +293,7 @@ body,
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.75rem !important; /* Título de sección pequeño */
+    font-size: 0.65rem !important; /* Título súper pequeño (10px aprox) */
     line-height: 1.2 !important;
     letter-spacing: 0.05em;
     margin-top: 0.5rem !important;
