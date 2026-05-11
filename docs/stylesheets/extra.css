@@ -1,10 +1,10 @@
 :root {
   /* Forzar la barra superior (Header) a Blanco */
-  --md-primary-fg-color: #ffffff;
+  --md-primary-fg-color: #515458;
   --md-primary-bg-color: #ffffff;
   
   /* Color del texto de la barra superior (Gris oscuro) */
-  --md-header-fg-color: #5f6368;
+  --md-header-fg-color: #515458;
   --md-header-bg-color: #ffffff;
 }
 
