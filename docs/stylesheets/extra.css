@@ -19,8 +19,8 @@
 }
 
 [data-md-color-scheme="default"] {
-  --md-text-color: #000000;
-  --md-typeset-color: #000000;
+  --md-text-color: #3c4043;
+  --md-typeset-color: #3c4043;
   --md-typeset-a-color: #1a73e8;
 }
 
@@ -45,7 +45,7 @@
 /* Typography Base */
 body, .md-typeset { 
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #000000 !important;
+    color: #3c4043 !important;
 }
 
 /* Headings */
@@ -56,7 +56,7 @@ body, .md-typeset {
 .md-typeset h5,
 .md-typeset h6 {
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #000000 !important;
+    color: #202124 !important;
 }
 .md-typeset h1 {
     font-weight: 400;
