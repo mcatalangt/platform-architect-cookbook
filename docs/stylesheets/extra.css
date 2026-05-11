@@ -207,6 +207,68 @@ body, .md-typeset {
     color: #f28b82;
 }
 
+/* --- SIDEBAR MENU STYLE (APACHE AIRFLOW STYLE) --- */
+
+/* 1. Sidebar Background color */
+.md-sidebar--primary {
+    background-color: #f8f9fa !important;
+    border-right: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+    background-color: #202124 !important;
+}
+
+/* 2. Normal Links */
+.md-sidebar--primary .md-nav__link {
+    color: #5f6368 !important;
+    font-weight: 400 !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
+    color: #9aa0a6 !important;
+}
+
+/* 3. Hover State */
+.md-sidebar--primary .md-nav__link:hover,
+.md-sidebar--primary .md-nav__link--passed:hover {
+    color: #1a73e8 !important;
+    background-color: transparent !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover {
+    color: #8ab4f8 !important;
+}
+
+/* 4. Active Link */
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__link--active[for] {
+    color: #1a73e8 !important;
+    font-weight: 500 !important;
+    background-color: transparent !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active {
+    color: #8ab4f8 !important;
+}
+
+/* 5. Section Headers (Like "REFERENCES") */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    font-size: 0.85em !important;
+    letter-spacing: 0.05em;
+    margin-top: 1rem !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section > .md-nav__link {
+    color: #ffffff !important;
+}
+
+/* Remove default active highlight backgrounds */
+.md-nav__item--active > .md-nav__link {
+    background-color: transparent !important;
+}
+
 /* Tables */
 .table th:nth-child(1) { width: 20%; }
 .table th:nth-child(2) { width: 80%; }
