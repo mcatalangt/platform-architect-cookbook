@@ -1,10 +1,10 @@
 # Bienvenido a Platform Architect's Cookbook
 
-Bienvenido a **The Stack Kitchen** Recetas, arquitecturas e implementaciones probadas en batalla: desde los cimientos de Kubernetes hasta Inteligencia Artificial
+Bienvenido a **Stack Kitchen** Recetas, arquitecturas e implementaciones probadas en batalla: desde los cimientos de Kubernetes hasta Inteligencia Artificial
 
-Diseñado para ingenieros que buscan agilidad, este hub permite desplegar desde entornos de pruebas (Sandbox) hasta arquitecturas de **Alta Disponibilidad** (HA) en cuestión de minutos. 
+Diseñado para ingenieros que buscan agilidad, Stack Kitchen permite desplegar desde entornos de pruebas (Sandbox) hasta arquitecturas de **Alta Disponibilidad** (HA) en cuestión de minutos. 
 
-Todo el código sigue rigurosamente las mejores prácticas de **SRE**, **DevSecOps** e **Ingeniería de Datos**, garantizando infraestructuras seguras y resilientes desde el primer despliegue.
+Todo el código sigue las mejores prácticas de **SRE**, **DevOps**, **Ingeniería de Datos** y **ML**, garantizando infraestructuras seguras y resilientes.
 
 Muchas de las buenas practicas y herramientas son parte del Cloud Native Landscape
 

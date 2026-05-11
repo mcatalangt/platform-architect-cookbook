@@ -1,4 +1,4 @@
-# The Platform Architect's Cookbook
+# Platform Architect's Cookbook
 
 **Created By:** Marco Tulio Catalán Funes
 
