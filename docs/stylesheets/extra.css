@@ -10,7 +10,7 @@
 
 /* Forzar que el título del sitio sea Azul Google */
 .md-header__title, .md-header__button {
-    color: #1a73e8 !important;
+    color: #115cbe !important;
 }
 
 /* Pestañas (Tabs) en blanco también */
