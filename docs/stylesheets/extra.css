@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 /* (Opcional) Si el logo queda muy pegado al borde izquierdo en móvil */
-@media screen and (max-width: 76.1875em) {
+@media screen and (max-width: 90.1875em) {
     .md-header__button.md-logo {
         margin-left: 8px;
     }
