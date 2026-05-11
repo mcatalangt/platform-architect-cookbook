@@ -230,13 +230,27 @@ body,
 
 /* --- SIDEBAR MENU STYLE (APACHE AIRFLOW STYLE) --- */
 
-/* 1. Sidebar Background color (Removed to prevent floating box issues) */
+/* 1. Sidebar Background color (Full Height on Desktop) */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        background-color: #f8f9fa !important;
+        border-right: 1px solid var(--md-default-fg-color--lightest) !important;
+        height: 100vh !important;
+        padding-top: 1rem !important;
+        margin-top: 0 !important;
+    }
+
+    [data-md-color-scheme="slate"] .md-sidebar--primary {
+        background-color: #202124 !important;
+    }
+}
 
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
     color: #5f6368 !important;
-    font-size: 0.85rem !important; /* Letra más pequeña para los links */
-    font-weight: 400 !important;
+    font-size: 0.85rem !important;
+    /* Letra más pequeña para los links */
+    font-weight: 200 !important;
     padding-top: 0.3rem !important;
     padding-bottom: 0.3rem !important;
     line-height: 1.4 !important;
@@ -276,7 +290,8 @@ body,
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.75rem !important; /* Título de sección más pequeño */
+    font-size: 0.75rem !important;
+    /* Título de sección más pequeño */
     line-height: 1.2 !important;
     letter-spacing: 0.05em;
     margin-top: 1rem !important;
