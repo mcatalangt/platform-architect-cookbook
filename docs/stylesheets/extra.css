@@ -90,7 +90,7 @@ h1, h2, h3 {
     /* Esto le pone el mismo color pero muy clarito (10% opacidad) para que se vea elegante */
     background-color: rgba(215, 216, 218, 0.1) !important;
     color:#1a73e8 !important;
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     /* Asegura que el borde del título también coincida */
 }
 
