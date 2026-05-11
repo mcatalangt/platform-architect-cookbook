@@ -230,15 +230,7 @@ body,
 
 /* --- SIDEBAR MENU STYLE (APACHE AIRFLOW STYLE) --- */
 
-/* 1. Sidebar Background color */
-.md-sidebar--primary {
-    background-color: #ffffff !important;
-    border-right: 1px solid var(--md-default-fg-color--lightest) !important;
-}
-
-[data-md-color-scheme="slate"] .md-sidebar--primary {
-    background-color: #202124 !important;
-}
+/* 1. Sidebar Background color (Removed to prevent floating box issues) */
 
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
