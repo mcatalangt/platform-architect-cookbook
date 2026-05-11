@@ -233,9 +233,10 @@ body,
 /* 1. Sidebar Background color (Full Height on Desktop) */
 @media screen and (min-width: 76.25em) {
     .md-sidebar--primary {
-        background-color: #f8f9fa !important;
+        background-color: #276aae !important;
         border-right: 1px solid var(--md-default-fg-color--lightest) !important;
         height: 100vh !important;
+        font-weight: 200 !important;
         padding-top: 1rem !important;
         margin-top: 0 !important;
     }
