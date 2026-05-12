@@ -147,10 +147,10 @@ body,
 
 /* Buttons (Primary and Outline) */
 .md-typeset .md-button {
-    font-size: 1rem !important;
+    font-size: 0.5rem !important;
     /* Increased from 0.875rem */
     font-weight: 300 !important;
-    padding: 0.6em 1.5em !important;
+    padding: 0.6em 0.5em !important;
     border-radius: 4px !important;
     color: var(--md-accent-fg-color) !important;
     background-color: transparent !important;
