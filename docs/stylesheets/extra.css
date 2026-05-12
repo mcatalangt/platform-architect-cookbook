@@ -10,7 +10,7 @@
     --md-accent-bg-color: #ffffff;
 
     /* Text colors */
-    --md-text-color: #000000;
+    --md-text-color: #242323;
     --md-typeset-color: #000000;
     --md-typeset-a-color: #1a73e8;
 
@@ -104,7 +104,8 @@ body,
 }
 
 .md-header__button.md-logo img {
-    height: 64px !important; /* Aumentado para que el logo se vea mucho más grande */
+    height: 64px !important;
+    /* Aumentado para que el logo se vea mucho más grande */
     width: auto !important;
     max-height: none !important;
 }
@@ -132,7 +133,7 @@ body,
 .md-typeset .md-button {
     font-size: 1rem !important;
     /* Increased from 0.875rem */
-    font-weight: 500 !important;
+    font-weight: 100 !important;
     padding: 0.6em 1.5em !important;
     border-radius: 4px !important;
     color: var(--md-accent-fg-color) !important;
@@ -244,10 +245,11 @@ body,
         border-right: 1px solid var(--md-default-fg-color--lightest) !important;
         padding-top: 1rem !important;
     }
+
     .md-sidebar--primary .md-sidebar__scrollwrap {
         height: 100% !important;
     }
-    
+
     [data-md-color-scheme="slate"] .md-sidebar--primary {
         background-color: #202124 !important;
     }
@@ -256,8 +258,10 @@ body,
 /* 2. Normal Links */
 .md-sidebar--primary .md-nav__link {
     color: #5f6368 !important;
-    font-size: 0.65rem !important; /* Letra microscópica (10px) */
-    font-weight: 400 !important; /* Peso normal para que sea legible en tamaño pequeño */
+    font-size: 0.65rem !important;
+    /* Letra microscópica (10px) */
+    font-weight: 400 !important;
+    /* Peso normal para que sea legible en tamaño pequeño */
     padding-top: 0.2rem !important;
     padding-bottom: 0.2rem !important;
     line-height: 1.3 !important;
@@ -296,7 +300,8 @@ body,
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #000000 !important;
-    font-size: 0.55rem !important; /* Título ultra pequeño (9px) */
+    font-size: 0.55rem !important;
+    /* Título ultra pequeño (9px) */
     line-height: 1.2 !important;
     letter-spacing: 0.05em;
     margin-top: 0.5rem !important;
