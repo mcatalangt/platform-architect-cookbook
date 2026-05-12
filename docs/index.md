@@ -13,30 +13,30 @@ Es el "mapa" oficial mantenido por la **CNCF (Cloud Native Computing Foundation)
 
 <br>
 
-<div class="grid cards" markdown>
+<div class="grid cards airflow-cards-container" markdown>
 
--   <div class="airflow-card" markdown="1">
-    <h3>Business<br>Operations</h3>
-    <p>Many companies build their core business, data powered applications, on top of Apache Airflow.</p>
-    <a href="#" class="md-button">Learn more</a>
-    </div>
+-   ### Business<br>Operations
 
--   <div class="airflow-card" markdown="1">
-    <h3 style="font-size: 1.5rem;">ETL / ELT</h3>
-    <p>Airflow is the open source standard for orchestrating ETL/ELT data pipelines.</p>
-    <a href="#" class="md-button">Learn more</a>
-    </div>
+    Many companies build their core business, data powered applications, on top of Apache Airflow.
 
--   <div class="airflow-card" markdown="1">
-    <h3>Infrastructure<br>Management</h3>
-    <p>With Airflow you can spin up, manage and tear down your infrastructure at the exact time you need it.</p>
     <a href="#" class="md-button">Learn more</a>
-    </div>
 
--   <div class="airflow-card" markdown="1">
-    <h3 style="color: #00bcd4; font-size: 1.5rem;">MLOps</h3>
-    <p>Airflow is the heart of the modern MLOps stack, orchestrating the entire machine learning lifecycle.</p>
+-   ### <span style="font-size: 1.5rem;">ETL / ELT</span>
+
+    Airflow is the open source standard for orchestrating ETL/ELT data pipelines.
+
     <a href="#" class="md-button">Learn more</a>
-    </div>
+
+-   ### Infrastructure<br>Management
+
+    With Airflow you can spin up, manage and tear down your infrastructure at the exact time you need it.
+
+    <a href="#" class="md-button">Learn more</a>
+
+-   ### <span style="color: #00bcd4; font-size: 1.5rem;">MLOps</span>
+
+    Airflow is the heart of the modern MLOps stack, orchestrating the entire machine learning lifecycle.
+
+    <a href="#" class="md-button">Learn more</a>
 
 </div>

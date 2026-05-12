@@ -208,15 +208,15 @@ body,
     margin: 1em -1em;
 }
 
-/* Airflow Custom Cards Styling */
-.airflow-card {
-    text-align: center;
+/* Airflow Custom Cards Styling applied to pure markdown list */
+.airflow-cards-container > ul > li {
+    text-align: center !important;
     padding: 1.5rem 1rem !important;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
 }
-.airflow-card h3 {
+.airflow-cards-container > ul > li > h3 {
     margin-top: 0 !important;
     font-weight: 800 !important;
     line-height: 1.2 !important;
@@ -224,33 +224,33 @@ body,
     border-bottom: none !important; /* Quitar borde si lo hubiera */
     transition: color 0.2s ease-in-out; /* Transición suave para el color */
 }
-.airflow-card p {
+.airflow-cards-container > ul > li > p {
     color: #5f6368 !important;
     font-size: 14px !important;
     margin-bottom: 2rem !important;
-    flex-grow: 1; /* Esto hace que el botón siempre se alinee abajo */
+    flex-grow: 1 !important; /* Esto hace que el botón siempre se alinee abajo */
 }
-[data-md-color-scheme="slate"] .airflow-card p {
+[data-md-color-scheme="slate"] .airflow-cards-container > ul > li > p {
     color: #9aa0a6 !important;
 }
-.airflow-card .md-button {
+.airflow-cards-container > ul > li > .md-button {
     border: 1px solid #1a73e8 !important;
     color: #1a73e8 !important;
-    width: auto;
-    margin: 0 auto;
+    width: auto !important;
+    margin: 0 auto !important;
     padding: 0.4em 1.2em !important;
 }
-[data-md-color-scheme="slate"] .airflow-card .md-button {
+[data-md-color-scheme="slate"] .airflow-cards-container > ul > li > .md-button {
     border: 1px solid #8ab4f8 !important;
     color: #8ab4f8 !important;
 }
 
 /* Efecto hover sobre el título de las tarjetas de Airflow */
-.md-typeset .cards>ul>li:hover .airflow-card h3 {
+.airflow-cards-container > ul > li:hover > h3 {
     color: #1a73e8 !important; /* Cambia al azul corporativo en hover */
 }
 
-[data-md-color-scheme="slate"] .md-typeset .cards>ul>li:hover .airflow-card h3 {
+[data-md-color-scheme="slate"] .airflow-cards-container > ul > li:hover > h3 {
     color: #8ab4f8 !important;
 }
 
