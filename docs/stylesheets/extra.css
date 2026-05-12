@@ -10,7 +10,7 @@
     --md-accent-bg-color: #ffffff;
 
     /* Text colors */
-    --md-text-color: #242323;
+    --md-text-color: #000000;
     --md-typeset-color: #000000;
     --md-typeset-a-color: #1a73e8;
 
@@ -49,6 +49,15 @@ body,
     color: #3c4043 !important;
 }
 
+/* Texto normal (párrafos, listas, tablas) */
+.md-typeset p, 
+.md-typeset li, 
+.md-typeset td, 
+.md-typeset th {
+    font-size: 14px !important; /* Ajusta este valor si la quieres más pequeña (ej. 13px) */
+    line-height: 1.6 !important;
+}
+
 /* Headings */
 .md-typeset h1,
 .md-typeset h2,
@@ -57,7 +66,7 @@ body,
 .md-typeset h5,
 .md-typeset h6 {
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #202124 !important;
+    color: #2e2e30 !important;
 }
 
 .md-typeset h1 {
@@ -133,7 +142,7 @@ body,
 .md-typeset .md-button {
     font-size: 1rem !important;
     /* Increased from 0.875rem */
-    font-weight: 100 !important;
+    font-weight: 500 !important;
     padding: 0.6em 1.5em !important;
     border-radius: 4px !important;
     color: var(--md-accent-fg-color) !important;
