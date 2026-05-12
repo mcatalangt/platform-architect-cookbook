@@ -5,7 +5,7 @@ Diseñado para ingenieros que buscan agilidad en el despliegue y operación de i
 
 <div class="grid cards airflow-cards-container" markdown>
 
--   ### Core<br>Infrastructure
+-   ### Core <br>Infrastructure
 
     Recetas de aprovisionamiento de clústeres de Kubernetes On-Prem o sobre Google Kubernetes Engine (GKE), configuración de almacenamiento, redes buenas practicas de seguridad, observability y Terraform.
 
