@@ -26,7 +26,7 @@ El código fuente completo se encuentra en el repositorio `data-reliability-hub`
 ## 2. On-Prem Infrastructure Deployment
 ## 3. Stack (Los ingredientes)
 !!! info "Herramientas"
-    * **Cloud:** Google Cloud Platform (GCP)
+    * **Cloud:** Google Cloud Platform (GCP) [GKE, Compute Engine]
     * **Herramienta:** Terraform v1.5+, Ansible, GitHub, GitHub Actions, Github Package
     * **Seguridad:** IAM Least Privilege, VPC Service Controls
 ## 4. Arquitecrtura
