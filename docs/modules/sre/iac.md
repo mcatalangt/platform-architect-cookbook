@@ -3,23 +3,7 @@
 Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://www.terraform.io/), [Ansible](https://docs.ansible.com/#get_started), GitHub Actions (IC) diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/) y On-Prem y la configuración de herramientas para arquitecturas de alta disponibilidad.
 
 ## 1. Cloud Infrastructure Deployment
-## 2. On-Prem Infrastructure Deployment
-## 3. Stack (Los ingredientes)
-## 4. Arquitecrtura
-## Paso a Paso
-## Validación E2E
-
-
-## Arquitectura
-El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
-
-!!! info "Stack Tecnológico"
-    * **Cloud:** Google Cloud Platform (GCP)
-    * **Herramienta:** Terraform v1.5+, Ansible, GitHub, GitHub Actions, Github Package
-    * **Seguridad:** IAM Least Privilege, VPC Service Controls
-
-## Acceso al Código
-
+### Acceso al Código
 El código fuente completo se encuentra en el repositorio `data-reliability-hub` nuestro repositorio central.
 
 [Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/data-reliability-hub){ .md-button  }
@@ -38,3 +22,17 @@ El código fuente completo se encuentra en el repositorio `data-reliability-hub`
 | `06-iac-event-driven` | Creación de event driven (PubSub, Kafka, RabbitMQ) para gestión de mensajes y desacoplamiento de sistemas| 🚧 Beta | [GitHub :octicons-link-external-16:](https://github.com/mcatalangt/data-reliability-hub/tree/main/03-iac-event-driven) |
 | `07-iac-kubernetes` | Creación de Kubernetes en GKE, Orquestador de Contenedores en 5 minutos| ✅ Stable | [GitHub :octicons-link-external-16:](https://github.com/mcatalangt/data-reliability-hub/tree/main/04-iac-kubernetes) |
 | `08-iac-observability` | Creación de Grafana Stack en GKE para Observabilidad de sistemas transacionales E2E (Logs, Trazas, Metricas y Perfiles)| 🚧 Beta | [GitHub :octicons-link-external-16:](https://github.com/mcatalangt/data-reliability-hub/tree/main/05-iac-observability) |
+
+## 2. On-Prem Infrastructure Deployment
+## 3. Stack (Los ingredientes)
+!!! info "Stack Tecnológico"
+    * **Cloud:** Google Cloud Platform (GCP)
+    * **Herramienta:** Terraform v1.5+, Ansible, GitHub, GitHub Actions, Github Package
+    * **Seguridad:** IAM Least Privilege, VPC Service Controls
+## 4. Arquitecrtura
+El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
+## 5. Paso a Paso
+## 6. Validación E2E
+
+
+
