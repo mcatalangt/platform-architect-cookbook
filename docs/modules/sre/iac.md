@@ -11,7 +11,7 @@ El código fuente completo se encuentra en el repositorio `iac_gke` que es el re
 ### Especificaciones Técnicas
 
 |Cantidad de nodos| Tipo de nodo |Specs| Memoria RAM |
-|---|---|---|
+| :--- | :--- | :--- | :--- |
 |2| n1-standard-2 | 2 vCPU| 7.5 GB |
 
 ### Módulos Incluidos
