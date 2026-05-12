@@ -415,9 +415,11 @@ body,
 .md-sidebar--primary .md-nav__item--section>.md-nav__link {
     text-transform: uppercase !important;
     font-weight: 800 !important;
-    color: var(--md-text-color) !important;
-    background-color: transparent !important; /* <--- AQUÍ CAMBIAS EL COLOR DE FONDO (ej. #e8eaed o transparent) */
-    padding: 0.3rem 0.5rem !important; /* Agregué un poco de padding por si decides ponerle un color de fondo */
+    color: #e50808 !important;
+    background-color: transparent !important;
+    /* <--- AQUÍ CAMBIAS EL COLOR DE FONDO (ej. #e8eaed o transparent) */
+    padding: 0.3rem 0.5rem !important;
+    /* Agregué un poco de padding por si decides ponerle un color de fondo */
     border-radius: 4px !important;
     font-size: 0.55rem !important;
     /* Título ultra pequeño (9px) */
