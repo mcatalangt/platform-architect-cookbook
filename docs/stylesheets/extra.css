@@ -416,7 +416,7 @@ body,
     text-transform: uppercase !important;
     font-weight: 800 !important;
     color: #170da0 !important;
-    background-color: #dd0d0d !important;
+    background-color: transparent !important;
     padding: 0.3rem 0.5rem !important;
     /* Agregué un poco de padding por si decides ponerle un color de fondo */
     border-radius: 4px !important;
