@@ -27,9 +27,9 @@ El código fuente completo se encuentra en el repositorio `data-reliability-hub`
 ## 3. Stack (Los ingredientes)
 !!! info "Herramientas"
     * **Cloud:** Google Cloud Platform (GCP) [GKE, Compute Engine]
-    * **Herramienta:** Terraform v1.5+, Ansible, GitHub, GitHub Actions, Github Package
+    * **Herramienta:** Terraform v1.5+, Terragrunt, Ansible, GitHub, GitHub Actions, Github Package
     * **Seguridad:** IAM Least Privilege, VPC Service Controls
-## 4. Arquitecrtura
+## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 ## 5. Paso a Paso
 ## 6. Validación E2E
