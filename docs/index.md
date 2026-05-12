@@ -7,19 +7,19 @@ Diseñado para ingenieros que buscan agilidad en el despliegue y operación de i
 
 -   ### Core<br>Infrastructure
 
-    Many companies build their core business, data powered applications, on top of Apache Airflow.
+    Recetas de aprovisionamiento de clústeres de Kubernetes On-Prem o sobre Google Kubernetes Engine (GKE), configuración de almacenamiento, redes buenas practicas de seguridad, observability y Terraform.
 
     <a href="#" class="md-button">Conoce Más</a>
 
 -   ### Data Platforms<br>& Pipelines
 
-    Airflow is the open source standard for orchestrating ETL/ELT data pipelines.
+    Implementaciones de Apache Iceberg, despliegues de Trino, orquestación de flujos de datos en Apache Airflow y Apache Beam asi como migraciones a GCP.
 
     <a href="#" class="md-button">Conoce Más</a>
 
 -   ### AI & MLOps
 
-    With Airflow you can spin up, manage and tear down your infrastructure at the exact time you need it.
+   Arquitecturas RAG avanzadas, cómo levantar LLMs locales (DeepSeek, Llama 3.1) con Qdrant y LlamaIndex, y pipelines de Machine Learning. Lo más moderno y experimental.
 
     <a href="#" class="md-button">Conoce Más</a>
 
