@@ -410,12 +410,15 @@ body,
     color: #8ab4f8 !important;
 }
 
-/* 5. Section Headers (Like "REFERENCES") */
+/* 5. Section Headers (Like "REFERENCES" or "BASE LAYER") */
 .md-sidebar--primary .md-nav--primary>.md-nav__list>.md-nav__item--section>.md-nav__link,
 .md-sidebar--primary .md-nav__item--section>.md-nav__link {
     text-transform: uppercase !important;
     font-weight: 800 !important;
-    color: #000000 !important;
+    color: var(--md-text-color) !important;
+    background-color: transparent !important; /* <--- AQUÍ CAMBIAS EL COLOR DE FONDO (ej. #e8eaed o transparent) */
+    padding: 0.3rem 0.5rem !important; /* Agregué un poco de padding por si decides ponerle un color de fondo */
+    border-radius: 4px !important;
     font-size: 0.55rem !important;
     /* Título ultra pequeño (9px) */
     line-height: 1.2 !important;
