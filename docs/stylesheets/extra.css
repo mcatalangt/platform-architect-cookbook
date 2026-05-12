@@ -67,23 +67,24 @@ body,
 .md-typeset h5,
 .md-typeset h6 {
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #2e2e30 !important;
+    color: #000000 !important; /* Negro puro como en la imagen */
 }
 
 .md-typeset h1 {
-    font-weight: 400;
-    letter-spacing: 0;
+    font-weight: 800 !important; /* Extra grueso */
+    letter-spacing: -0.02em; /* Ligeramente más compacto para títulos gruesos */
     margin-bottom: 1rem;
 }
 
 .md-typeset h2 {
-    font-weight: 400;
+    font-weight: 800 !important; /* Extra grueso */
+    letter-spacing: -0.01em;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .md-typeset h3 {
-    font-weight: 500;
+    font-weight: 700 !important; /* Grueso */
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
