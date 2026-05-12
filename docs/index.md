@@ -19,7 +19,7 @@ Diseñado para ingenieros que buscan agilidad en el despliegue y operación de i
 
 -   ### AI & MLOps
 
-   Arquitecturas RAG avanzadas, cómo levantar LLMs locales (DeepSeek, Llama 3.1) con Qdrant y LlamaIndex, y pipelines de Machine Learning. Lo más moderno y experimental.
+    Arquitecturas RAG avanzadas, cómo levantar LLMs locales (DeepSeek, Llama 3.1) con Qdrant y LlamaIndex, y pipelines de Machine Learning. Lo más moderno y experimental.
 
     <a href="#" class="md-button">Conoce Más</a>
 
