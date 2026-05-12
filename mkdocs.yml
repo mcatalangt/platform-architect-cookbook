@@ -77,11 +77,12 @@ nav:
   - Home: index.md
   
   - 'Base Layer (Core Infrastructure)':
-      - 'Infrastructure as Code (IaC)': modules/sre/iac.md
+      - 'Provisioning & IaC (Preparando el Terreno)': modules/sre/iac.md
+      - 'GitOps & Continuous Delivery': modules/sre/gitops.md
+      - 'Networking & Ingress': modules/sre/networking.md
       - 'Observability Stack': modules/sre/observability.md
-      - 'Automation Playbooks (Toil Reduction)': modules/sre/automation.md
-      - 'FinOps Infracots': modules/sre/findops.md
       - 'Security Best Practices Checkov': modules/sre/security.md
+      - 'FinOps Infracots': modules/sre/findops.md
   
   - 'Data Layer (Data Platforms & Pipelines)':
       - 'Data Infrastructure': modules/data/iac.md
