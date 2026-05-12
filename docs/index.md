@@ -11,7 +11,7 @@ Diseñado para ingenieros que buscan agilidad en el despliegue y operación de i
 
     <a href="#" class="md-button">Learn more</a>
 
--   ### <span style="font-size: 1.5rem;">Data Platforms<br>& Pipelines</span>
+-   ### Data Platforms<br>& Pipelines
 
     Airflow is the open source standard for orchestrating ETL/ELT data pipelines.
 

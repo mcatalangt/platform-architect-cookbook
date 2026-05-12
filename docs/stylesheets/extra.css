@@ -209,9 +209,18 @@ body,
 }
 
 /* Airflow Custom Cards Styling applied to pure markdown list */
-@media screen and (min-width: 60em) {
-    .airflow-cards-container > ul {
-        grid-template-columns: repeat(3, 1fr) !important; /* Fuerza exactamente 3 columnas en línea */
+@media screen and (min-width: 45em) {
+    /* Usamos flexbox estricto para forzar que siempre estén en línea (3 columnas) */
+    .md-typeset .airflow-cards-container > ul {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 1rem !important;
+    }
+    .md-typeset .airflow-cards-container > ul > li {
+        flex: 1 1 0 !important;
+        width: 33.333% !important;
+        max-width: 33.333% !important;
     }
 }
 
