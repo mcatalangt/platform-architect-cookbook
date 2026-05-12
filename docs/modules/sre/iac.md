@@ -4,9 +4,9 @@ Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://ww
 
 ## 1. Cloud Infrastructure Deployment
 ### Acceso al Código
-El código fuente completo se encuentra en el repositorio `data-reliability-hub` nuestro repositorio central.
+El código fuente completo se encuentra en el repositorio `iac_gke` que es el repositorio central.
 
-[Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/data-reliability-hub){ .md-button  }
+[Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/iac_gke.git){ .md-button  }
 
 ---
 
