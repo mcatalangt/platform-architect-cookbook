@@ -209,6 +209,12 @@ body,
 }
 
 /* Airflow Custom Cards Styling applied to pure markdown list */
+@media screen and (min-width: 60em) {
+    .airflow-cards-container > ul {
+        grid-template-columns: repeat(3, 1fr) !important; /* Fuerza exactamente 3 columnas en línea */
+    }
+}
+
 .airflow-cards-container > ul > li {
     text-align: center !important;
     padding: 1.5rem 1rem !important;
