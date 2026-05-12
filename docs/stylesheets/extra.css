@@ -194,16 +194,64 @@ body,
 }
 
 .md-typeset .cards>ul>li:hover {
-    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15) !important;
+    box-shadow: 0 8px 16px rgba(60, 64, 67, 0.15), 0 4px 8px rgba(60, 64, 67, 0.1) !important;
+    transform: translateY(-5px); /* Efecto de elevar/agrandar la tarjeta */
 }
 
 [data-md-color-scheme="slate"] .md-typeset .cards>ul>li:hover {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 4px 8px 3px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(-5px);
 }
 
 .md-typeset .cards>ul>li>hr {
     border-bottom: 1px solid var(--md-default-fg-color--lightest);
     margin: 1em -1em;
+}
+
+/* Airflow Custom Cards Styling */
+.airflow-card {
+    text-align: center;
+    padding: 1.5rem 1rem !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.airflow-card h3 {
+    margin-top: 0 !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: none !important; /* Quitar borde si lo hubiera */
+    transition: color 0.2s ease-in-out; /* Transición suave para el color */
+}
+.airflow-card p {
+    color: #5f6368 !important;
+    font-size: 14px !important;
+    margin-bottom: 2rem !important;
+    flex-grow: 1; /* Esto hace que el botón siempre se alinee abajo */
+}
+[data-md-color-scheme="slate"] .airflow-card p {
+    color: #9aa0a6 !important;
+}
+.airflow-card .md-button {
+    border: 1px solid #1a73e8 !important;
+    color: #1a73e8 !important;
+    width: auto;
+    margin: 0 auto;
+    padding: 0.4em 1.2em !important;
+}
+[data-md-color-scheme="slate"] .airflow-card .md-button {
+    border: 1px solid #8ab4f8 !important;
+    color: #8ab4f8 !important;
+}
+
+/* Efecto hover sobre el título de las tarjetas de Airflow */
+.md-typeset .cards>ul>li:hover .airflow-card h3 {
+    color: #1a73e8 !important; /* Cambia al azul corporativo en hover */
+}
+
+[data-md-color-scheme="slate"] .md-typeset .cards>ul>li:hover .airflow-card h3 {
+    color: #8ab4f8 !important;
 }
 
 /* Admonitions */
