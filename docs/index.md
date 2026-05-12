@@ -9,19 +9,19 @@ Diseñado para ingenieros que buscan agilidad en el despliegue y operación de i
 
     Many companies build their core business, data powered applications, on top of Apache Airflow.
 
-    <a href="#" class="md-button">Learn more</a>
+    <a href="#" class="md-button">Conoce Más</a>
 
 -   ### Data Platforms<br>& Pipelines
 
     Airflow is the open source standard for orchestrating ETL/ELT data pipelines.
 
-    <a href="#" class="md-button">Learn more</a>
+    <a href="#" class="md-button">Conoce Más</a>
 
 -   ### AI & MLOps
 
     With Airflow you can spin up, manage and tear down your infrastructure at the exact time you need it.
 
-    <a href="#" class="md-button">Learn more</a>
+    <a href="#" class="md-button">Conoce Más</a>
 
 </div>
 

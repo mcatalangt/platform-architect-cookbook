@@ -67,24 +67,29 @@ body,
 .md-typeset h5,
 .md-typeset h6 {
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #000000 !important; /* Negro puro como en la imagen */
+    color: #000000 !important;
+    /* Negro puro como en la imagen */
 }
 
 .md-typeset h1 {
-    font-weight: 800 !important; /* Extra grueso */
-    letter-spacing: -0.02em; /* Ligeramente más compacto para títulos gruesos */
+    font-weight: 800 !important;
+    /* Extra grueso */
+    letter-spacing: -0.02em;
+    /* Ligeramente más compacto para títulos gruesos */
     margin-bottom: 1rem;
 }
 
 .md-typeset h2 {
-    font-weight: 800 !important; /* Extra grueso */
+    font-weight: 800 !important;
+    /* Extra grueso */
     letter-spacing: -0.01em;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .md-typeset h3 {
-    font-weight: 700 !important; /* Grueso */
+    font-weight: 700 !important;
+    /* Grueso */
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
@@ -144,7 +149,7 @@ body,
 .md-typeset .md-button {
     font-size: 1rem !important;
     /* Increased from 0.875rem */
-    font-weight: 500 !important;
+    font-weight: 300 !important;
     padding: 0.6em 1.5em !important;
     border-radius: 4px !important;
     color: var(--md-accent-fg-color) !important;
@@ -195,7 +200,8 @@ body,
 
 .md-typeset .cards>ul>li:hover {
     box-shadow: 0 8px 16px rgba(60, 64, 67, 0.15), 0 4px 8px rgba(60, 64, 67, 0.1) !important;
-    transform: translateY(-5px); /* Efecto de elevar/agrandar la tarjeta */
+    transform: translateY(-5px);
+    /* Efecto de elevar/agrandar la tarjeta */
 }
 
 [data-md-color-scheme="slate"] .md-typeset .cards>ul>li:hover {
@@ -210,62 +216,73 @@ body,
 
 /* Airflow Custom Cards Styling applied to pure markdown list */
 @media screen and (min-width: 45em) {
+
     /* Usamos flexbox estricto para forzar que siempre estén en línea (3 columnas) */
-    .md-typeset .airflow-cards-container > ul {
+    .md-typeset .airflow-cards-container>ul {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
         gap: 1rem !important;
     }
-    .md-typeset .airflow-cards-container > ul > li {
+
+    .md-typeset .airflow-cards-container>ul>li {
         flex: 1 1 0 !important;
         width: 33.333% !important;
         max-width: 33.333% !important;
     }
 }
 
-.airflow-cards-container > ul > li {
+.airflow-cards-container>ul>li {
     text-align: center !important;
     padding: 1.5rem 1rem !important;
     display: flex !important;
     flex-direction: column !important;
     height: 100% !important;
 }
-.airflow-cards-container > ul > li > h3 {
+
+.airflow-cards-container>ul>li>h3 {
     margin-top: 0 !important;
     font-weight: 800 !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
-    border-bottom: none !important; /* Quitar borde si lo hubiera */
-    transition: color 0.2s ease-in-out; /* Transición suave para el color */
+    border-bottom: none !important;
+    /* Quitar borde si lo hubiera */
+    transition: color 0.2s ease-in-out;
+    /* Transición suave para el color */
 }
-.airflow-cards-container > ul > li > p {
+
+.airflow-cards-container>ul>li>p {
     color: #5f6368 !important;
     font-size: 14px !important;
     margin-bottom: 2rem !important;
-    flex-grow: 1 !important; /* Esto hace que el botón siempre se alinee abajo */
+    flex-grow: 1 !important;
+    /* Esto hace que el botón siempre se alinee abajo */
 }
-[data-md-color-scheme="slate"] .airflow-cards-container > ul > li > p {
+
+[data-md-color-scheme="slate"] .airflow-cards-container>ul>li>p {
     color: #9aa0a6 !important;
 }
-.airflow-cards-container > ul > li > .md-button {
+
+.airflow-cards-container>ul>li>.md-button {
     border: 1px solid #1a73e8 !important;
     color: #1a73e8 !important;
     width: auto !important;
     margin: 0 auto !important;
     padding: 0.4em 1.2em !important;
 }
-[data-md-color-scheme="slate"] .airflow-cards-container > ul > li > .md-button {
+
+[data-md-color-scheme="slate"] .airflow-cards-container>ul>li>.md-button {
     border: 1px solid #8ab4f8 !important;
     color: #8ab4f8 !important;
 }
 
 /* Efecto hover sobre el título de las tarjetas de Airflow */
-.airflow-cards-container > ul > li:hover > h3 {
-    color: #1a73e8 !important; /* Cambia al azul corporativo en hover */
+.airflow-cards-container>ul>li:hover>h3 {
+    color: #1a73e8 !important;
+    /* Cambia al azul corporativo en hover */
 }
 
-[data-md-color-scheme="slate"] .airflow-cards-container > ul > li:hover > h3 {
+[data-md-color-scheme="slate"] .airflow-cards-container>ul>li:hover>h3 {
     color: #8ab4f8 !important;
 }
 
