@@ -46,15 +46,16 @@
 body,
 .md-typeset {
     font-family: "Roboto", Arial, sans-serif !important;
-    color: #3c4043 !important;
+    color: #000000 !important;
 }
 
 /* Texto normal (párrafos, listas, tablas) */
-.md-typeset p, 
-.md-typeset li, 
-.md-typeset td, 
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
 .md-typeset th {
-    font-size: 14px !important; /* Ajusta este valor si la quieres más pequeña (ej. 13px) */
+    font-size: 15px !important;
+    /* Ajusta este valor si la quieres más pequeña (ej. 13px) */
     line-height: 1.6 !important;
 }
 
