@@ -415,9 +415,8 @@ body,
 .md-sidebar--primary .md-nav__item--section>.md-nav__link {
     text-transform: uppercase !important;
     font-weight: 800 !important;
-    color: #e50808 !important;
-    background-color: transparent !important;
-    /* <--- AQUÍ CAMBIAS EL COLOR DE FONDO (ej. #e8eaed o transparent) */
+    color: #170da0 !important;
+    background-color: #dd0d0d !important;
     padding: 0.3rem 0.5rem !important;
     /* Agregué un poco de padding por si decides ponerle un color de fondo */
     border-radius: 4px !important;
