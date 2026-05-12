@@ -2,6 +2,14 @@
 
 Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://www.terraform.io/), [Ansible](https://docs.ansible.com/#get_started), GitHub Actions (IC) diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/) y On-Prem y la configuración de herramientas para arquitecturas de alta disponibilidad.
 
+## 1. Cloud Infrastructure Deployment
+## 2. On-Prem Infrastructure Deployment
+## 3. Stack (Los ingredientes)
+## 4. Arquitecrtura
+## Paso a Paso
+## Validación E2E
+
+
 ## Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
