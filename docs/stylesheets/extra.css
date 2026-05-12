@@ -335,11 +335,11 @@ body,
     border-left: 4px solid #8ab4f8 !important;
 }
 
-/* Inline Code Blocks */
+/* Inline Code Blocks (textos con acento grave como `iac_gke`) */
 .md-typeset code {
     background-color: #f1f3f4;
-    color: #d93025;
-    /* Google Red for code tags */
+    color: #2013ce;
+    /* <--- AQUÍ CAMBIAS EL COLOR DEL TEXTO EN MODO CLARO (actual: rojo Google) */
     border-radius: 4px;
     padding: 0.2em 0.4em;
     font-size: 0.85em;
@@ -348,6 +348,7 @@ body,
 [data-md-color-scheme="slate"] .md-typeset code {
     background-color: #303134;
     color: #f28b82;
+    /* <--- AQUÍ CAMBIAS EL COLOR DEL TEXTO EN MODO OSCURO */
 }
 
 /* --- SIDEBAR MENU STYLE (APACHE AIRFLOW STYLE) --- */
