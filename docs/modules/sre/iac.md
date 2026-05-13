@@ -1,6 +1,6 @@
 # Infraestructura como Código (IaC)
 
-Esta sección centralizan plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem también la configuración de herramientas para arquitecturas de alta disponibilidad.
+Esta sección centralizan plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), asi como github actions y github packages para la orquestación de flujos de trabajo.
 
 ## 1. Cloud Infrastructure Deployment
 ### Acceso al Código
