@@ -23,7 +23,8 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
-![Arquitectura](assets/BasicGKE.png){ align=center width="100%" }
+![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
+
 ## 5. Paso a Paso
 ## 6. Validación E2E
 
