@@ -1,6 +1,6 @@
 # Infraestructura como Código (IaC)
 
-Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)  diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), también github actions y github packages para la orquestación de flujos de trabajo.
+Esta sección centralizo plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)  diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), también github actions y github packages para la orquestación de flujos de trabajo.
 
 ## 1. Implementación de infraestructura en la nube
 ### Acceso al Código
@@ -10,7 +10,7 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 
 ### Especificaciones Técnicas 
 
-|Tipo|Cloud Provider|Cantidad de nodos| Tipo de nodo    |Specs| Memoria RAM |
+|Tipo|Provider|Nodos| Tipo de nodo    |Specs| Memoria RAM |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Basic GKE | GCP |2| n1-standard-2 | 2 vCPU| 7.5 GB |
 
@@ -18,10 +18,12 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ## 3. Stack (Los ingredientes)
 !!! info "Herramientas"
     * **Cloud:** Google Cloud Platform (GCP) [GKE, Compute Engine]
-    * **Herramienta:** Terraform v1.5+, Terragrunt, Ansible, GitHub, GitHub Actions, Github Package
+    * **Herramienta:** Terraform v1.5+, Terragrunt, Ansible, GitHub Actions, Github Package
     * **Seguridad:** IAM Least Privilege, VPC Service Controls
 ## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
+
+![Arquitectura](assets/BasicGKE.png){ align=center width="100%" }
 ## 5. Paso a Paso
 ## 6. Validación E2E
 
