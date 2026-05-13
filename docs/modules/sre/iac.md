@@ -1,18 +1,18 @@
 # Infraestructura como Código (IaC)
 
-Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)  diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), asi como github actions y github packages para la orquestación de flujos de trabajo.
+Esta sección centraliza plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)  diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), también github actions y github packages para la orquestación de flujos de trabajo.
 
-## 1. Cloud Infrastructure Deployment
+## 1. Implementación de infraestructura en la nube
 ### Acceso al Código
-El código fuente completo se encuentra en el repositorio `iac_gke` que es el repositorio central.
+El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha optado por estructurar el repositorio de manera modular con Terragrunt para permitir la reutilización en diferentes entornos (Dev, Staging, Prod).
 
 [Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/iac_gke.git){ .md-button  }
 
 ### Especificaciones Técnicas 
 
-|Tipo|Cloud Provider|Cantidad de nodos| Tipo de nodo |Specs| Memoria RAM |
+|Tipo|Cloud Provider|Cantidad de nodos| Tipo de nodo    |Specs| Memoria RAM |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-|Basic GKE|GCP|2| n1-standard-2 | 2 vCPU| 7.5 GB |
+| Basic GKE | GCP |2| n1-standard-2 | 2 vCPU| 7.5 GB |
 
 ## 2. On-Prem Infrastructure Deployment
 ## 3. Stack (Los ingredientes)
