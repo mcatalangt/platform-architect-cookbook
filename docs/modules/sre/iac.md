@@ -29,12 +29,12 @@ El código está modularizado para permitir la reutilización en diferentes ento
 
 ### Pre-requisitos
 
-#### - Descargar el codigo de la repositorio
+##### - Descargar el codigo de la repositorio
     ```bash
     git clone https://github.com/mcatalangt/iac_gke.git
     ```
 
-#### - Crear una llave service acount en GCP y colocarla como secret en GH ACTIONS
+##### - Crear una llave service acount en GCP y colocarla como secret en GH ACTIONS
   
     - Ve a la Consola de Google Cloud.
     - Asegúrate de estar en el Proyecto correcto (menú desplegable en la barra superior).
@@ -48,7 +48,7 @@ El código está modularizado para permitir la reutilización en diferentes ento
     
     ![service-account](../../assets/secretKey.png){ align=center width="100%" }
     
-#### - Crear 2 variables de entorno en GitHub
+##### - Crear 2 variables de entorno en GitHub
     - `GCP_PROJECT`: Coloca el id del proyecto en GCP
     - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
