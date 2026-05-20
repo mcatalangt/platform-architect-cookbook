@@ -26,6 +26,15 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
 
 ## 5. Paso a Paso
+
+### Pre-requisitos
+
+- Descargar el codigo de la repositorio
+```bash
+git clone https://github.com/mcatalangt/iac_gke.git
+```
+- 
+
 ## 6. Validación E2E
 
 ## 7. Otros Módulos Incluidos
