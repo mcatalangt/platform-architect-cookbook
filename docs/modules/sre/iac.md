@@ -31,17 +31,15 @@ El código está modularizado para permitir la reutilización en diferentes ento
 
 ```bash git clone https://github.com/mcatalangt/iac_gke.git ```
 
-##### - Crear un Workload Identity Federation en GCP
-        Para autenticar a github actions con gcp sin usar llaves.
-        👉 [Ver guía de configuración paso a paso aquí](security.md#1-autenticacion-con-workload-identity-federation)
-
-
-
 ##### - Crear 2 variables de entorno en GitHub
 - `GCP_PROJECT`: Coloca el id del proyecto en GCP
 - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
 ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
+
+##### - Crear un Workload Identity Federation en GCP
+        Para autenticar a github actions con gcp sin usar llaves.
+        👉 [Ver guía de configuración paso a paso aquí](security.md#workload-identity)
 
 ## 6. Validación E2E
 

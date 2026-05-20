@@ -1,4 +1,4 @@
 # SRE - Security
 
-#### 1. Autenticación con Workload Identity Federation
+#### 1. Autenticación con Workload Identity Federation {: #workload-identity }
 
