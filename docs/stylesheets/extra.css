@@ -59,6 +59,13 @@ body,
     line-height: 1.6 !important;
 }
 
+/* Sublistas (Para evitar que el texto se vea sesgado/cursivo) */
+.md-typeset ul ul li,
+.md-typeset ol ul li {
+    font-style: normal !important; /* Quita la cursiva */
+    color: var(--md-text-color) !important;
+}
+
 /* Headings */
 .md-typeset h1,
 .md-typeset h2,

@@ -47,8 +47,8 @@ git clone https://github.com/mcatalangt/iac_gke.git
      ![service-account](../../assets/secretKey.png){ align=center width="100%" }
     
 - Crear 2 variables de entorno en GitHub
-  - GCP_PROJECT: Coloca el id del proyecto en GCP
-  - GCP_REGION: Coloca el nombre de la region o zona en GCP (ej. us-central1)
+    GCP_PROJECT: Coloca el id del proyecto en GCP
+    GCP_REGION: Coloca el nombre de la region o zona en GCP (ej. us-central1)
   ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
 ## 6. Validación E2E
