@@ -30,9 +30,10 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ### Pre-requisitos
 
 - Descargar el codigo de la repositorio
-```bash
-git clone https://github.com/mcatalangt/iac_gke.git
-```
+    ```bash
+    git clone https://github.com/mcatalangt/iac_gke.git
+    ```
+
 - Crear una llave service acount en GCP y colocarla como secret en GH ACTIONS
   
     - Ve a la Consola de Google Cloud.
@@ -42,14 +43,16 @@ git clone https://github.com/mcatalangt/iac_gke.git
     - En la parte superior, navega a la pestaña Claves (Keys).
     - Haz clic en el botón Agregar clave (Add Key) y selecciona Crear clave nueva (Create new key).
     - Elige el tipo de clave JSON (es el estándar de la industria) y haz clic en Crear.
-     - El archivo .json se descargará automáticamente a tu computadora.
-     - Crea un repositorio en GitHub y coloca la llave en los secrets
-     ![service-account](../../assets/secretKey.png){ align=center width="100%" }
+    - El archivo .json se descargará automáticamente a tu computadora.
+    - Crea un repositorio en GitHub y coloca la llave en los secrets
+    
+    ![service-account](../../assets/secretKey.png){ align=center width="100%" }
     
 - Crear 2 variables de entorno en GitHub
-    GCP_PROJECT: Coloca el id del proyecto en GCP
-    GCP_REGION: Coloca el nombre de la region o zona en GCP (ej. us-central1)
-  ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
+    - `GCP_PROJECT`: Coloca el id del proyecto en GCP
+    - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
+    
+    ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
 ## 6. Validación E2E
 
