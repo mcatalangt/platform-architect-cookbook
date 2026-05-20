@@ -33,10 +33,7 @@ El código está modularizado para permitir la reutilización en diferentes ento
 
 ##### - Crear un Workload Identity Federation en GCP
         Para autenticar a github actions con gcp sin usar llaves.
-        consola     -> IAM y administración -> Workload Identity Federation.
-                    -> Crear Pool
-                    -> Crear Proveedor
-                    -> Configurar atributo de reclamo
+        👉 [Ver guía de configuración paso a paso aquí](security.md#1-autenticacion-con-workload-identity-federation)
 
 
 
