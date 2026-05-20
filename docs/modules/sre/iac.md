@@ -33,23 +33,23 @@ El código está modularizado para permitir la reutilización en diferentes ento
 
 ##### - Crear una llave service acount en GCP y colocarla como secret en GH ACTIONS
 
-    - Ve a la Consola de Google Cloud.
-    - Asegúrate de estar en el Proyecto correcto (menú desplegable en la barra superior).
-    - En el menú de navegación izquierdo, ve a IAM y administración (IAM & Admin) > Cuentas de servicio (Service Accounts).
-    - Busca en la lista la Service Account a la que le quieres crear la llave y haz clic en su dirección de correo (o crea una nueva si no existe).
-    - En la parte superior, navega a la pestaña Claves (Keys).
-    - Haz clic en el botón Agregar clave (Add Key) y selecciona Crear clave nueva (Create new key).
-    - Elige el tipo de clave JSON (es el estándar de la industria) y haz clic en Crear.
-    - El archivo .json se descargará automáticamente a tu computadora.
-    - Crea un repositorio en GitHub y coloca la llave en los secrets
+- Ve a la Consola de Google Cloud.
+- Asegúrate de estar en el Proyecto correcto (menú desplegable en la barra superior).
+- En el menú de navegación izquierdo, ve a IAM y administración (IAM & Admin) > Cuentas de servicio (Service Accounts).
+- Busca en la lista la Service Account a la que le quieres crear la llave y haz clic en su dirección de correo (o crea una nueva si no existe).
+- En la parte superior, navega a la pestaña Claves (Keys).
+- Haz clic en el botón Agregar clave (Add Key) y selecciona Crear clave nueva (Create new key).
+- Elige el tipo de clave JSON (es el estándar de la industria) y haz clic en Crear.
+- El archivo .json se descargará automáticamente a tu computadora.
+- Crea un repositorio en GitHub y coloca la llave en los secrets
 
-    ![service-account](../../assets/secretKey.png){ align=center width="100%" }
+![service-account](../../assets/secretKey.png){ align=center width="100%" }
 
 ##### - Crear 2 variables de entorno en GitHub
-    - `GCP_PROJECT`: Coloca el id del proyecto en GCP
-    - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
+- `GCP_PROJECT`: Coloca el id del proyecto en GCP
+- `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
-    ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
+![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
 ## 6. Validación E2E
 
