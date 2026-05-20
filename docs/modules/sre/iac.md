@@ -38,8 +38,9 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
 ##### - Crear un Workload Identity Federation en GCP
-        Para autenticar a github actions con gcp sin usar llaves.
-        👉 [Ver guía de configuración paso a paso aquí](security.md#workload-identity)
+Para autenticar a github actions con gcp sin usar llaves.
+
+👉 [Ver guía de configuración paso a paso aquí](security.md#workload-identity)
 
 ## 6. Validación E2E
 
