@@ -3,12 +3,12 @@
 Esta sección centralizo plantillas de :simple-terraform: [Terraform](https://www.terraform.io/)  diseñadas para la creacion de recursos de infraestructura segura en [Google Cloud](https://cloud.google.com/), asi como en On-Prem usando :simple-ansible: [Ansible](https://docs.ansible.com/), también github actions y github packages para la orquestación de flujos de trabajo.
 
 ## 1. Implementación de infraestructura en la nube
-### Acceso al Código
+##### Acceso al Código
 El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha optado por estructurar el repositorio de manera modular con Terragrunt para permitir la reutilización en diferentes entornos (Dev, Staging, Prod).
 
 [Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/iac_gke.git){ .md-button  }
 
-### Especificaciones Técnicas 
+##### Especificaciones Técnicas 
 
 |Tipo|Provider|Nodos| Tipo de nodo    |Specs| Memoria RAM |
 | :--- | :--- | :--- | :--- | :--- | :--- |
