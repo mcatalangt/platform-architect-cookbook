@@ -117,7 +117,7 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 
 ## 6. Validación E2E
 
-##### Ejecución en GitHub Actions
+##### Ejecución del Deploy en GitHub Actions
 ![Actions](../../assets/githubActions.png){ align=center width="100%" }
 
 
@@ -128,6 +128,8 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 ##### Overview de GKE Resources
 ![GKE](../../assets/gke-resources.png){ align=center width="100%" }
 
+##### Ejecución del Destroy en GitHub Actions
+![Actions](../../assets/destroyActions.png){ align=center width="100%" }
 
 ## 7. Otros Módulos Incluidos
 
