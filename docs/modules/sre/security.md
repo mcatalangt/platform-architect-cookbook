@@ -34,7 +34,7 @@ Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de ent
 
 ```bash export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
-```
+ ```
 
 #### 2. Crear el Workload Identity Pool
 El "Pool" es el contenedor lógico que agrupará las identidades externas.
@@ -43,7 +43,7 @@ El "Pool" es el contenedor lógico que agrupará las identidades externas.
   --project="${PROJECT_ID}" \
   --location="global" \
   --display-name="GitHub Actions Pool"
-```
+ ```
 #### 3. Crear el Proveedor OIDC
 El "Provider" establece la conexión y define cómo se mapean los atributos del token de GitHub hacia Google Cloud.
 
