@@ -32,22 +32,29 @@ A continuación, se detallan los pasos para crear un túnel de confianza OIDC en
 #### 1. Obtener el Número del Proyecto
 Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de entorno para facilitar los siguientes comandos.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
 ```bash 
 export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 ```
+</div>
+
 #### 2. Crear el Workload Identity Pool
 El "Pool" es el contenedor lógico que agrupará las identidades externas.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
 ```bash 
 gcloud iam workload-identity-pools create "github-actions-pool" \
   --project="${PROJECT_ID}" \
   --location="global" \
   --display-name="GitHub Actions Pool"
 ```
+</div>
+
 #### 3. Crear el Proveedor OIDC
 El "Provider" establece la conexión y define cómo se mapean los atributos del token de GitHub hacia Google Cloud.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
 ```bash
 gcloud iam workload-identity-pools providers create-oidc "github-provider" \
   --project="${PROJECT_ID}" \
@@ -57,6 +64,7 @@ gcloud iam workload-identity-pools providers create-oidc "github-provider" \
   --attribute-mapping="google.subject=assertion.sub,attribute.actor=assertion.actor,attribute.repository=assertion.repository" \
   --issuer-uri="https://token.actions.githubusercontent.com"
 ```
+</div>
 
 #### 4. Vincular la Service Account con el Repositorio
 Este paso autoriza a un repositorio específico de GitHub a generar tokens a nombre de tu Service Account de GCP.
@@ -64,6 +72,7 @@ Este paso autoriza a un repositorio específico de GitHub a generar tokens a nom
 !!! note
     Reemplaza `tu-organizacion/tu-repositorio` con los valores exactos.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
 ```bash
 export SERVICE_ACCOUNT="tu-service-account@${PROJECT_ID}.iam.gserviceaccount.com"
 export REPO="tu-organizacion/tu-repositorio"
@@ -83,6 +92,7 @@ gcloud iam workload-identity-pools providers describe "github-provider" \
   --workload-identity-pool="github-actions-pool" \
   --format="value(name)"
 ```
+</div>
 
 !!! success "Obtención del identificador del proveedor"
     (Copia la salida de este comando, se verá como: `projects/123456789/locations/global/workloadIdentityPools/...`)
