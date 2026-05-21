@@ -45,7 +45,8 @@ Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 ##### - Implementación en GitHub Actions
 Agrega el siguiente bloque a tu archivo .github/workflows/pipeline.yml.
 
-⚠️ Importante: El bloque permissions es obligatorio para que GitHub pueda generar el token OIDC, y export_environment_variables: true es crucial para que herramientas como Terraform/Terragrunt puedan detectar el token temporal en los pasos posteriores.
+!!! warning "Importante:"
+    El bloque `permissions` es obligatorio para que GitHub pueda generar el `token OIDC`, y `export_environment_variables: true` es crucial para que herramientas como `Terraform/Terragrunt` puedan detectar el token temporal en los pasos posteriores.
 
 ```bash
 jobs:
