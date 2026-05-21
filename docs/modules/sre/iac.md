@@ -113,6 +113,14 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 
 ## 6. Validación E2E
 
+##### Ejecución en GitHub Actions
+![Actions](../../assets/githubActions.png){ align=center width="100%" }
+
+##### Overview de GKE
+![GKE](../../assets/gke.png){ align=center width="100%" }
+
+
+
 ## 7. Otros Módulos Incluidos
 
 | Módulo| Descripción |Estado| Repositorio |
