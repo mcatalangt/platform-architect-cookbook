@@ -23,7 +23,7 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
-### Estructura del repositorio (Recomendada):
+### Estructura del repositorio:
 
 ```text
 📦 iac_core
@@ -48,6 +48,7 @@ El código está modularizado para permitir la reutilización en diferentes ento
  ┃   ┗ 📜 outputs.tf
  ┃   ┗ 📜 variables.tf
  ┗ 📜 README.md
+```
 
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
 
