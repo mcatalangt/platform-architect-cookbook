@@ -35,3 +35,10 @@ Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de ent
 ```bash export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 ```
+
+
+## 2. Checkov {: #checkov }
+
+### ¿Qué es y para qué sirve?
+
+Checkov es una herramienta de código abierto para la detección de vulnerabilidades de seguridad en código de infraestructura.
