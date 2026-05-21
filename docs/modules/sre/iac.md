@@ -85,7 +85,7 @@ Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 
 Modifica el siguiente bloque en tu archivo `.github/workflows/deploy.yml`.
 
-<div style="font-size: 0.60rem; line-height: 1.2;">
+<div style="font-size: 0.40rem; line-height: 1.2;">
 
 ```bash
 jobs:
