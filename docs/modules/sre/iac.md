@@ -119,7 +119,8 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 ##### Overview de GKE
 ![GKE](../../assets/gke.png){ align=center width="100%" }
 
-
+##### Overview de GKE Resources
+![GKE](../../assets/gke-resources.png){ align=center width="100%" }
 
 ## 7. Otros Módulos Incluidos
 
