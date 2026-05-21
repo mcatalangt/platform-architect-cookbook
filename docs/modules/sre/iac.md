@@ -42,6 +42,37 @@ Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 
 👉 [Ver guía de configuración](security.md#workload-identity)
 
+##### - Implementación en GitHub Actions
+Agrega el siguiente bloque a tu archivo .github/workflows/pipeline.yml.
+
+⚠️ Importante: El bloque permissions es obligatorio para que GitHub pueda generar el token OIDC, y export_environment_variables: true es crucial para que herramientas como Terraform/Terragrunt puedan detectar el token temporal en los pasos posteriores.
+
+```bash
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    # Requisito obligatorio para solicitar el token OIDC
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: 'Checkout Code'
+        uses: 'actions/checkout@v4'
+
+      - name: 'Autenticación con Workload Identity'
+        id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          workload_identity_provider: 'projects/TU_PROJECT_NUMBER/locations/global/workloadIdentityPools/github-actions-pool/providers/github-provider'
+          service_account: 'tu-service-account@tu-id-de-proyecto.iam.gserviceaccount.com'
+          export_environment_variables: true 
+
+      - name: 'Ejecutar despliegue (Ej. Terraform/Terragrunt)'
+        run: 'terragrunt apply -auto-approve'
+```
+
 ## 6. Validación E2E
 
 ## 7. Otros Módulos Incluidos

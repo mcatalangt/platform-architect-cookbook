@@ -36,6 +36,58 @@ Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de ent
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 ```
 
+#### 2. Crear el Workload Identity Pool
+El "Pool" es el contenedor lógico que agrupará las identidades externas.
+
+```bash gcloud iam workload-identity-pools create "github-actions-pool" \
+  --project="${PROJECT_ID}" \
+  --location="global" \
+  --display-name="GitHub Actions Pool"
+```
+#### 3. Crear el Proveedor OIDC
+El "Provider" establece la conexión y define cómo se mapean los atributos del token de GitHub hacia Google Cloud.
+
+```bash
+gcloud iam workload-identity-pools providers create-oidc "github-provider" \
+  --project="${PROJECT_ID}" \
+  --location="global" \
+  --workload-identity-pool="github-actions-pool" \
+  --display-name="GitHub OIDC Provider" \
+  --attribute-mapping="google.subject=assertion.sub,attribute.actor=assertion.actor,attribute.repository=assertion.repository" \
+  --issuer-uri="https://token.actions.githubusercontent.com"
+  ```
+
+#### 4. Vincular la Service Account con el Repositorio
+Este paso autoriza a un repositorio específico de GitHub a generar tokens a nombre de tu Service Account de GCP.
+
+Nota: Reemplaza tu-organizacion/tu-repositorio con los valores exactos.
+
+```bash
+export SERVICE_ACCOUNT="tu-service-account@${PROJECT_ID}.iam.gserviceaccount.com"
+export REPO="tu-organizacion/tu-repositorio"
+
+gcloud iam service-accounts add-iam-policy-binding "${SERVICE_ACCOUNT}" \
+  --project="${PROJECT_ID}" \
+  --role="roles/iam.workloadIdentityUser" \
+  --member="principalSet://iam.googleapis.com/projects/${PROJECT_NUMBER}/locations/global/workloadIdentityPools/github-actions-pool/attribute.repository/${REPO}"
+```
+
+#### 5. Obtener el Identificador del Proveedor
+Extrae la ruta completa del proveedor generado, la cual necesitarás en tu pipeline de GitHub.
+
+```bash
+gcloud iam workload-identity-pools providers describe "github-provider" \
+  --project="${PROJECT_ID}" \
+  --location="global" \
+  --workload-identity-pool="github-actions-pool" \
+  --format="value(name)"
+```
+(Copia la salida de este comando, se verá como: projects/123456789/locations/global/workloadIdentityPools/...)
+
+
+
+
+
 
 ## 2. Checkov {: #checkov }
 
