@@ -8,8 +8,8 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 
 [Código Fuente en GitHub :octicons-link-external-16:](https://github.com/mcatalangt/iac_gke.git){ .md-button  }
 
-##### Especificaciones Técnicas 
 
+##### Especificaciones Técnicas 
 |Tipo|Provider|Nodos| Tipo de nodo    |Specs| Memoria RAM |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Basic GKE | GCP |2| n1-standard-2 | 2 vCPU| 7.5 GB |
