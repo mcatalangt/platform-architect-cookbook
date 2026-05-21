@@ -23,6 +23,32 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
+### Estructura del repositorio (Recomendada):
+
+```text
+📦 iac_core
+ ┣ 📂 .github
+ ┃ ┗ 📂 workflows
+ ┃   ┣ 📜 deploy.yaml
+ ┃   ┗ 📜 destroy.yaml
+ ┣ 📂 live
+ ┃ ┗ 📂 desarrollo
+ ┃   ┗ 📂 gke-base
+ ┃     ┗ 📜 terragrunt.hcl
+ ┃   ┗ 📂 gke-resources
+ ┃     ┗ 📜 terragrunt.hcl
+ ┃   ┗ 📜 terragrunt.hcl
+ ┣ 📂 modules
+ ┃ ┗ 📂 gke-base
+ ┃   ┗ 📜 main.tf
+ ┃   ┗ 📜 outputs.tf
+ ┃   ┗ 📜 variables.tf
+ ┃ ┗ 📂 gke-resources
+ ┃   ┗ 📜 main.tf
+ ┃   ┗ 📜 outputs.tf
+ ┃   ┗ 📜 variables.tf
+ ┗ 📜 README.md
+
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
 
 ## 5. Paso a Paso
@@ -74,25 +100,8 @@ jobs:
       - name: 'Ejecutar despliegue (Ej. Terraform/Terragrunt)'
         run: 'terragrunt apply -auto-approve'
 ```
-```text
-📦 iac_core
- ┣ 📂 .github
- ┃ ┗ 📂 workflows
- ┃   ┣ 📜 deploy.yaml
- ┃   ┗ 📜 destroy.yaml
- ┣ 📂 live
- ┃ ┗ 📂 desarrollo
- ┃   ┗ 📂 gke-base
- ┃     ┗ 📜 terragrunt.hcl
- ┃   ┗ 📂 gke-resources
- ┃     ┗ 📜 terragrunt.hcl
- ┃   ┗ 📜 terragrunt.hcl
- ┣ 📂 modules
- ┃ ┗ 📂 gke-base
- ┃   ┗ 📜 main.tf
- ┃ ┗ 📂 gke-resources
- ┃   ┗ 📜 main.tf
- ┗ 📜 README.md
+
+
 
 ## 6. Validación E2E
 
