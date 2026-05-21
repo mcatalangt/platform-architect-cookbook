@@ -1,16 +1,14 @@
-# SRE - Security
+# Security
 
-#### 1. Autenticación con Workload Identity Federation {: #workload-identity }
+## 1. Autenticación con Workload Identity Federation (WIF) en Google Cloud {: #workload-identity }
 
-# Workload Identity Federation (WIF) en Google Cloud
-
-## ¿Qué es y para qué sirve?
+### ¿Qué es y para qué sirve?
 
 **Workload Identity Federation (WIF)** es un mecanismo de gestión de identidades que permite a cargas de trabajo externas (como GitHub Actions, GitLab CI, AWS, Azure o servidores On-Premise) autenticarse y acceder a los recursos de Google Cloud de forma segura.
 
 En lugar de requerir que almacenes contraseñas estáticas o archivos JSON en sistemas de terceros, WIF establece una relación de confianza basada en el protocolo **OIDC (OpenID Connect)** o SAML. Cuando tu pipeline de CI/CD necesita hacer un despliegue, solicita un token de corta duración a Google Cloud demostrando quién es mediante tokens criptográficos.
 
-## Workload Identity Federation vs. Service Account Keys (Archivos JSON)
+### Workload Identity Federation vs. Service Account Keys (Archivos JSON)
 
 El uso de llaves estáticas (`.json`) es considerado un antipatrón en la seguridad de infraestructura moderna debido a los altos riesgos de exfiltración.
 
@@ -23,17 +21,17 @@ El uso de llaves estáticas (`.json`) es considerado un antipatrón en la seguri
 
 ---
 
-## Guía de Configuración: GitHub Actions a Google Cloud
+### Guía de Configuración: GitHub Actions a Google Cloud
 
 A continuación, se detallan los pasos para crear un túnel de confianza OIDC entre GitHub y un proyecto de Google Cloud utilizando `gcloud`.
 
-### Requisitos Previos
+#### Requisitos Previos
 * Tener instalada y autenticada la CLI de Google Cloud (`gcloud`).
 * Permisos de administrador (`roles/iam.workloadIdentityPoolAdmin` y `roles/iam.serviceAccountAdmin`) en el proyecto destino.
 
-### 1. Obtener el Número del Proyecto
+#### 1. Obtener el Número del Proyecto
 Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de entorno para facilitar los siguientes comandos.
 
-```bash
-export PROJECT_ID="tu-id-de-proyecto"
+```bash export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
+```
