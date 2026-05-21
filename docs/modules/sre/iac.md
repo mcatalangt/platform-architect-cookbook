@@ -24,7 +24,6 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
 ##### Estructura del repositorio:
-
 Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el cual separa la configuración global de la configuración específica de cada módulo.
 
 ```text
@@ -53,7 +52,6 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
 ```
 
 ##### Diagrama de la arquitectura:
-
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
 
 
@@ -63,18 +61,18 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
 
 ```bash git clone https://github.com/mcatalangt/iac_gke.git ```
 
-##### - Crear 2 variables de entorno en GitHub
+##### Crear 2 variables de entorno en GitHub
 - `GCP_PROJECT`: Coloca el id del proyecto en GCP (ej. platform-core-386722)
 - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
 ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
-##### - Crear un Workload Identity Federation en GCP
+##### Crear un Workload Identity Federation en GCP
 Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 
 👉 [Ver guía de configuración](security.md#workload-identity)
 
-##### - Implementación en GitHub Actions
+##### Implementación en GitHub Actions
 
 !!! warning "Importante:"
     El bloque `permissions` es obligatorio para que GitHub pueda generar el `token OIDC`, y `export_environment_variables: true` es crucial para que herramientas como `Terraform/Terragrunt` puedan detectar el token temporal en los pasos posteriores.
