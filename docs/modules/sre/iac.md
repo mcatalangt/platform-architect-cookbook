@@ -57,24 +57,24 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
 
 ## 5. Paso a Paso
 
-##### - Descargar el codigo del repositorio
+##### 1. Descargar el codigo del repositorio
 
 ```bash 
 git clone https://github.com/mcatalangt/iac_gke.git 
 ```
 
-##### Crear 2 variables de entorno en GitHub
+##### 2. Crear 2 variables de entorno en GitHub
 - `GCP_PROJECT`: Coloca el id del proyecto en GCP (ej. platform-core-386722)
 - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
 ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
 
-##### Crear un Workload Identity Federation en GCP
+##### 3. Crear un Workload Identity Federation en GCP
 Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 
 👉 [Ver guía de configuración](security.md#workload-identity)
 
-##### Implementación en GitHub Actions
+##### 4. Implementación en GitHub Actions
 
 !!! warning "Importante:"
     El bloque `permissions` es obligatorio para que GitHub pueda generar el `token OIDC`, y `export_environment_variables: true` es crucial para que herramientas como `Terraform/Terragrunt` puedan detectar el token temporal en los pasos posteriores.
@@ -107,6 +107,8 @@ jobs:
         run: 'terragrunt apply -auto-approve'
 ```
 
+##### 5. Despliegue de infraestructura
+    Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git push
 
 
 ## 6. Validación E2E
