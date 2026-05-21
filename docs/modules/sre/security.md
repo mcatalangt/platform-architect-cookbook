@@ -61,7 +61,8 @@ gcloud iam workload-identity-pools providers create-oidc "github-provider" \
 #### 4. Vincular la Service Account con el Repositorio
 Este paso autoriza a un repositorio específico de GitHub a generar tokens a nombre de tu Service Account de GCP.
 
-Nota: Reemplaza `tu-organizacion/tu-repositorio` con los valores exactos.
+!!! note
+Reemplaza `tu-organizacion/tu-repositorio` con los valores exactos.
 
 ```bash
 export SERVICE_ACCOUNT="tu-service-account@${PROJECT_ID}.iam.gserviceaccount.com"
