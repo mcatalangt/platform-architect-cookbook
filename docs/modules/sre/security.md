@@ -12,7 +12,7 @@ En lugar de requerir que almacenes contraseñas estáticas o archivos JSON en si
 
 El uso de llaves estáticas (`.json`) es considerado un antipatrón en la seguridad de infraestructura moderna debido a los altos riesgos de exfiltración.
 
-<div style="font-size: 0.60rem; line-height: 1.2;">
+<div style="font-size: 0.60rem;">
 
 | Característica | Llaves de Service Account (JSON) | Workload Identity Federation (WIF) |
 | :--- | :--- | :--- |
