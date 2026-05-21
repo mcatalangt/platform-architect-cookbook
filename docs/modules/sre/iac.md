@@ -59,7 +59,9 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
 
 ##### - Descargar el codigo del repositorio
 
-```bash git clone https://github.com/mcatalangt/iac_gke.git ```
+```bash 
+git clone https://github.com/mcatalangt/iac_gke.git 
+```
 
 ##### Crear 2 variables de entorno en GitHub
 - `GCP_PROJECT`: Coloca el id del proyecto en GCP (ej. platform-core-386722)
