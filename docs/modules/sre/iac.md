@@ -16,7 +16,7 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 
 ## 2. On-Prem Infrastructure Deployment
 ## 3. Stack (Los ingredientes)
-!!! info "Herramientas"
+!!! note "Herramientas"
     * **Cloud:** Google Cloud Platform (GCP) [GKE, Compute Engine]
     * **Herramienta:** Terraform v1.5+, Terragrunt, Ansible, GitHub Actions, Github Package
     * **Seguridad:** IAM Least Privilege, VPC Service Controls
