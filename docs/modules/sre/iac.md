@@ -23,21 +23,21 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ## 4. Arquitectura
 El código está modularizado para permitir la reutilización en diferentes entornos (Dev, Staging, Prod) en Cloud y On-Prem.
 
-### Estructura del repositorio:
+##### Estructura del repositorio:
 
 ```text
-📦 iac_core
+📦 iac_core    --- Repositorio Base
  ┣ 📂 .github
  ┃ ┗ 📂 workflows
- ┃   ┣ 📜 deploy.yaml
- ┃   ┗ 📜 destroy.yaml
+ ┃   ┣ 📜 deploy.yaml  --- Trigger para despliegue de infraestructura
+ ┃   ┗ 📜 destroy.yaml --- Trigger para destrucción de infraestructura
  ┣ 📂 live
  ┃ ┗ 📂 desarrollo
  ┃   ┗ 📂 gke-base
- ┃     ┗ 📜 terragrunt.hcl
+ ┃     ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de infraestructura
  ┃   ┗ 📂 gke-resources
- ┃     ┗ 📜 terragrunt.hcl
- ┃   ┗ 📜 terragrunt.hcl
+ ┃     ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de recursos en GKE
+ ┃   ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de infraestructura
  ┣ 📂 modules
  ┃ ┗ 📂 gke-base
  ┃   ┗ 📜 main.tf
