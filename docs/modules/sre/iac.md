@@ -32,7 +32,7 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ```bash git clone https://github.com/mcatalangt/iac_gke.git ```
 
 ##### - Crear 2 variables de entorno en GitHub
-- `GCP_PROJECT`: Coloca el id del proyecto en GCP
+- `GCP_PROJECT`: Coloca el id del proyecto en GCP (ej. platform-core-386722)
 - `GCP_REGION`: Coloca el nombre de la region o zona en GCP (ej. us-central1)
     
 ![variables](../../assets/variablesGitHub.png){ align=center width="100%" }
