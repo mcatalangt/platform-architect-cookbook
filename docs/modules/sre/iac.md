@@ -85,6 +85,8 @@ Lo utilizaremos para autenticar a github actions con GCP sin usar llaves.
 
 Modifica el siguiente bloque en tu archivo `.github/workflows/deploy.yml`.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
+
 ```bash
 jobs:
   deploy:
@@ -110,6 +112,7 @@ jobs:
       - name: 'Ejecutar despliegue (Ej. Terraform/Terragrunt)'
         run: 'terragrunt apply -auto-approve'
 ```
+</div>
 
 ##### 5. Despliegue de infraestructura
 Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git push
@@ -118,7 +121,7 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 ## 6. Validación E2E
 
 ##### Ejecución del Deploy en GitHub Actions
-![Actions](../../assets/githubActions.png){ align=center width="100%" }
+![Deploy Actions](../../assets/githubActions.png){ align=center width="100%" }
 
 
 ##### Overview de GKE
@@ -129,7 +132,7 @@ Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git 
 ![GKE](../../assets/gke-resources.png){ align=center width="100%" }
 
 ##### Ejecución del Destroy en GitHub Actions
-![Actions](../../assets/destroyActions.png){ align=center width="100%" }
+![Destroy Actions](../../assets/destroyActions.png){ align=center width="100%" }
 
 ## 7. Otros Módulos Incluidos
 
