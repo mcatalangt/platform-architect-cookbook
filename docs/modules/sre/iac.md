@@ -31,8 +31,8 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
 📦 iac_core    --- Repositorio Base
  ┣ 📂 .github
  ┃ ┗ 📂 workflows
- ┃   ┣ 📜 deploy.yaml  --- Trigger para despliegue de infraestructura
- ┃   ┗ 📜 destroy.yaml --- Trigger para destrucción de infraestructura
+ ┃   ┣ 📜 deploy.yaml  --- Workflow para despliegue de infraestructura
+ ┃   ┗ 📜 destroy.yaml --- Workflow para destrucción de infraestructura
  ┣ 📂 live
  ┃ ┣ 📂 desarrollo
  ┃ ┃ ┣ 📂 gke-base
@@ -52,9 +52,10 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
  ┗ 📜 README.md             --- README del repositorio
 ```
 
-
+##### Diagrama de la arquitectura:
 
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
+
 
 ## 5. Paso a Paso
 
