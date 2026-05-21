@@ -82,9 +82,13 @@ gcloud iam service-accounts add-iam-policy-binding "${SERVICE_ACCOUNT}" \
   --role="roles/iam.workloadIdentityUser" \
   --member="principalSet://iam.googleapis.com/projects/${PROJECT_NUMBER}/locations/global/workloadIdentityPools/github-actions-pool/attribute.repository/${REPO}"
 ```
+</div>
+
+
 #### 5. Obtener el Identificador del Proveedor
 Extrae la ruta completa del proveedor generado, la cual necesitarás en tu pipeline de GitHub.
 
+<div style="font-size: 0.60rem; line-height: 1.2;">
 ```bash
 gcloud iam workload-identity-pools providers describe "github-provider" \
   --project="${PROJECT_ID}" \
