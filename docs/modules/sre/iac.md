@@ -26,6 +26,8 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ##### Estructura del repositorio:
 Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el cual separa la configuración global de la configuración específica de cada módulo.
 
+<div style="font-size: 0.75rem; line-height: 1.2;">
+
 ```text
 📦 iac_core    --- Repositorio Base
  ┣ 📂 .github
@@ -50,6 +52,8 @@ Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el
  ┃   ┗ 📜 variables.tf        --- Variables del módulo
  ┗ 📜 README.md             --- README del repositorio
 ```
+
+</div>
 
 ##### Diagrama de la arquitectura:
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
