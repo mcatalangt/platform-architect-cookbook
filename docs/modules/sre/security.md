@@ -35,8 +35,7 @@ Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de ent
 ```bash 
 export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
- ```
-
+```
 #### 2. Crear el Workload Identity Pool
 El "Pool" es el contenedor lógico que agrupará las identidades externas.
 
@@ -45,7 +44,7 @@ gcloud iam workload-identity-pools create "github-actions-pool" \
   --project="${PROJECT_ID}" \
   --location="global" \
   --display-name="GitHub Actions Pool"
- ```
+```
 #### 3. Crear el Proveedor OIDC
 El "Provider" establece la conexión y define cómo se mapean los atributos del token de GitHub hacia Google Cloud.
 
@@ -57,7 +56,7 @@ gcloud iam workload-identity-pools providers create-oidc "github-provider" \
   --display-name="GitHub OIDC Provider" \
   --attribute-mapping="google.subject=assertion.sub,attribute.actor=assertion.actor,attribute.repository=assertion.repository" \
   --issuer-uri="https://token.actions.githubusercontent.com"
-  ```
+```
 
 #### 4. Vincular la Service Account con el Repositorio
 Este paso autoriza a un repositorio específico de GitHub a generar tokens a nombre de tu Service Account de GCP.
@@ -73,7 +72,6 @@ gcloud iam service-accounts add-iam-policy-binding "${SERVICE_ACCOUNT}" \
   --role="roles/iam.workloadIdentityUser" \
   --member="principalSet://iam.googleapis.com/projects/${PROJECT_NUMBER}/locations/global/workloadIdentityPools/github-actions-pool/attribute.repository/${REPO}"
 ```
-
 #### 5. Obtener el Identificador del Proveedor
 Extrae la ruta completa del proveedor generado, la cual necesitarás en tu pipeline de GitHub.
 
