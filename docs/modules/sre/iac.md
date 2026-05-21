@@ -25,6 +25,8 @@ El código está modularizado para permitir la reutilización en diferentes ento
 
 ##### Estructura del repositorio:
 
+Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el cual separa la configuración global de la configuración específica de cada módulo.
+
 ```text
 📦 iac_core    --- Repositorio Base
  ┣ 📂 .github
@@ -32,23 +34,25 @@ El código está modularizado para permitir la reutilización en diferentes ento
  ┃   ┣ 📜 deploy.yaml  --- Trigger para despliegue de infraestructura
  ┃   ┗ 📜 destroy.yaml --- Trigger para destrucción de infraestructura
  ┣ 📂 live
- ┃ ┗ 📂 desarrollo
- ┃   ┗ 📂 gke-base
- ┃     ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de infraestructura
- ┃   ┗ 📂 gke-resources
- ┃     ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de recursos en GKE
- ┃   ┗ 📜 terragrunt.hcl    ---  Configuración para despliegue de infraestructura
+ ┃ ┣ 📂 desarrollo
+ ┃ ┃ ┣ 📂 gke-base
+ ┃ ┃ ┃ ┗ 📜 terragrunt.hcl    ---  Configuración terragrunt para el clúster base
+ ┃ ┃ ┗ 📂 gke-resources
+ ┃ ┃   ┗ 📜 terragrunt.hcl    ---  Configuración terragrunt para recursos internos (namespaces, etc)
+ ┃ ┗ 📜 terragrunt.hcl        ---  Configuración terragrunt global ROOT (Estado y Providers)
  ┣ 📂 modules
  ┃ ┗ 📂 gke-base
- ┃   ┗ 📜 main.tf
- ┃   ┗ 📜 outputs.tf
- ┃   ┗ 📜 variables.tf
+ ┃   ┗ 📜 main.tf           ---  Módulo terraform para despliegue de infraestructura
+ ┃   ┗ 📜 outputs.tf        --- Outputs del módulo
+ ┃   ┗ 📜 variables.tf        --- Variables del módulo
  ┃ ┗ 📂 gke-resources
- ┃   ┗ 📜 main.tf
- ┃   ┗ 📜 outputs.tf
- ┃   ┗ 📜 variables.tf
- ┗ 📜 README.md
+ ┃   ┗ 📜 main.tf           --- Módulo terraform para despliegue de recursos
+ ┃   ┗ 📜 outputs.tf        --- Outputs del módulo
+ ┃   ┗ 📜 variables.tf        --- Variables del módulo
+ ┗ 📜 README.md             --- README del repositorio
 ```
+
+
 
 ![Arquitectura](../../assets/BasicGKE.png){ align=center width="100%" }
 
