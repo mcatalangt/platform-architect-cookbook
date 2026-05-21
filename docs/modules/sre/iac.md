@@ -108,7 +108,7 @@ jobs:
 ```
 
 ##### 5. Despliegue de infraestructura
-    Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git push
+Puedes ejecutar el codigo desde GitHub Actions o desde tu maquina local con git push
 
 
 ## 6. Validación E2E
