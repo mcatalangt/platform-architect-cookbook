@@ -32,14 +32,16 @@ A continuación, se detallan los pasos para crear un túnel de confianza OIDC en
 #### 1. Obtener el Número del Proyecto
 Guarda el número de tu proyecto (no el ID alfanumérico) en una variable de entorno para facilitar los siguientes comandos.
 
-```bash export PROJECT_ID="tu-id-de-proyecto"
+```bash 
+export PROJECT_ID="tu-id-de-proyecto"
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
  ```
 
 #### 2. Crear el Workload Identity Pool
 El "Pool" es el contenedor lógico que agrupará las identidades externas.
 
-```bash gcloud iam workload-identity-pools create "github-actions-pool" \
+```bash 
+gcloud iam workload-identity-pools create "github-actions-pool" \
   --project="${PROJECT_ID}" \
   --location="global" \
   --display-name="GitHub Actions Pool"
