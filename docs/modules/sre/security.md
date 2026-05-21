@@ -83,7 +83,9 @@ gcloud iam workload-identity-pools providers describe "github-provider" \
   --workload-identity-pool="github-actions-pool" \
   --format="value(name)"
 ```
-(Copia la salida de este comando, se verá como: `projects/123456789/locations/global/workloadIdentityPools/...`)
+
+!!! success "Obtención del identificador del proveedor"
+    (Copia la salida de este comando, se verá como: `projects/123456789/locations/global/workloadIdentityPools/...`)
 
 
 
