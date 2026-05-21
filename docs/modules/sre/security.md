@@ -12,8 +12,6 @@ En lugar de requerir que almacenes contraseñas estáticas o archivos JSON en si
 
 El uso de llaves estáticas (`.json`) es considerado un antipatrón en la seguridad de infraestructura moderna debido a los altos riesgos de exfiltración.
 
-<div style="font-size: 0.60rem;">
-
 | Característica | Llaves de Service Account (JSON) | Workload Identity Federation (WIF) |
 | :--- | :--- | :--- |
 | **Ciclo de Vida** | Permanente (hasta que se revoquen o expiren manualmente). | Temporal (Tokens de corta duración, típicamente 1 hora). |
@@ -21,7 +19,6 @@ El uso de llaves estáticas (`.json`) es considerado un antipatrón en la seguri
 | **Sobrecarga Operativa** | Alta. Requiere políticas de rotación de llaves, almacenamiento seguro y auditoría constante. | Cero. Google y el proveedor (ej. GitHub) manejan la negociación del token automáticamente. |
 | **Granularidad de Acceso** | Baja. Quien tenga la llave tiene todos los permisos asignados a la cuenta. | Alta (ABAC). Puedes restringir el acceso para que solo un repositorio, rama o *tag* específico pueda asumir la identidad. |
 
-</div>
 ---
 
 ### Guía de Configuración: GitHub Actions a Google Cloud
