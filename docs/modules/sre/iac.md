@@ -26,7 +26,7 @@ El código está modularizado para permitir la reutilización en diferentes ento
 ##### Estructura del repositorio:
 Estoy usando el patrón de diseño DRY (Don't Repeat Yourself) de Terragrunt, el cual separa la configuración global de la configuración específica de cada módulo.
 
-<div style="font-size: 0.75rem; line-height: 1.2;">
+<div style="font-size: 0.60rem; line-height: 1.2;">
 
 ```text
 📦 iac_core    --- Repositorio Base
