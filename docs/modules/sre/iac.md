@@ -12,9 +12,9 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 ##### Especificaciones Técnicas 
 |Tipo|Provider|Nodos| Tipo de nodo    |Specs| Memoria RAM |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Dev GKE | GCP |2| e2-medium | 2 vCPU| 7.5 GB |
+| Dev GKE | GCP |2| e2-medium | 2 vCPU| 4 GB |
 | Stage GKE | GCP |2| n1-standard-2 | 2 vCPU| 7.5 GB |
-| Prod GKE | GCP |3| e2-standard-2 | 2 vCPU| 7.5 GB |
+| Prod GKE | GCP |3| e2-standard-2 | 2 vCPU| 8 GB |
 
 ## 2. On-Prem Infrastructure Deployment
 ## 3. Stack (Los ingredientes)
