@@ -8,6 +8,11 @@ La forma más sencilla de poner en marcha un clúster de Kubernetes de nivel de 
 
 [https://kops.sigs.k8s.io/](https://kops.sigs.k8s.io/)
 
+## Kubespray
+Implemente un clúster de Kubernetes listo para producción.
+
+[https://kubespray.io/#/] (https://kubespray.io/#/)
+
 
 ## Kubernetes Cluster API (CAPI)
 Cluster API es un subproyecto de Kubernetes centrado en proporcionar API declarativas y herramientas para simplificar el aprovisionamiento, la actualización y el funcionamiento de múltiples clústeres de Kubernetes.
