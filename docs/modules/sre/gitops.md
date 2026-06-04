@@ -11,7 +11,7 @@ La forma más sencilla de poner en marcha un clúster de Kubernetes de nivel de 
 ## Kubespray
 Implemente un clúster de Kubernetes listo para producción.
 
-[https://kubespray.io/#/] (https://kubespray.io/#/)
+[https://kubespray.io/#/](https://kubespray.io/#/)
 
 
 ## Kubernetes Cluster API (CAPI)
