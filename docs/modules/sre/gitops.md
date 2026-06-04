@@ -1,7 +1,4 @@
-# Automation with Ansible
-
-Colección de playbooks de **Ansible** y scripts de **Python** para la gestión de configuración y remediación automática de incidentes.
-
+# GitOps & Infrastructure Provisioning (Reducing Toil)
 
 ## KOps
 La forma más sencilla de poner en marcha un clúster de Kubernetes de nivel de producción.
