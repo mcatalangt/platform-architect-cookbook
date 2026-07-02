@@ -17,6 +17,9 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 | Prod GKE | GCP |3| e2-standard-2 | 2 vCPU| 8 GB |
 
 ## 2. On-Prem Infrastructure Deployment
+### Kubespray 
+es una herramienta de código abierto (perteneciente al proyecto oficial de Kubernetes SIGs) diseñada para automatizar el despliegue, la configuración y el mantenimiento de clústeres de Kubernetes listos para producción.
+
 ## 3. Stack (Los ingredientes)
 !!! note "Herramientas"
     * **Cloud:** Google Cloud Platform (GCP) [GKE, Compute Engine]
