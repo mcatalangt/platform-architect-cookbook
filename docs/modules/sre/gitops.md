@@ -1,5 +1,22 @@
 # GitOps & Infrastructure Provisioning (Reducing Toil)
 
+## IDP - Internal Developer Platform
+
+### Backstage (Portal para Desarrolladores)
+Es una plataforma de código abierto desarrollada por Spotify que actúa como un "portal para desarrolladores" o "Steel Toe Shoes para desarrolladores". Su objetivo principal es proporcionar un lugar centralizado donde los equipos de software puedan encontrar, navegar y gestionar todos sus productos de software, servicios, documentación, herramientas y más.
+[https://backstage.io/](https://backstage.io/)
+
+
+### Score (Open Core) - Abstracción del Desarrollador (Workload Specification)
+Plataforma de código abierto para la gestión del ciclo de vida de los servicios de TI.
+[https://score.dev/](https://score.dev/)
+
+### Crossplane - API de Infraestructura (Infra as Code) 
+
+El Motor y Control Plane (Orquestación e Infraestructura)
+Plataforma de código abierto para la gestión del ciclo de vida de los servicios de TI.
+[https://www.crossplane.io/](https://www.crossplane.io/)
+
 ## KOps
 La forma más sencilla de poner en marcha un clúster de Kubernetes de nivel de producción.
 

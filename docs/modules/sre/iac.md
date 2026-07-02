@@ -18,7 +18,7 @@ El código fuente completo se encuentra en el repositorio `iac_gke`, y se ha opt
 
 ## 2. On-Prem Infrastructure Deployment
 ### Kubespray 
-es una herramienta de código abierto (perteneciente al proyecto oficial de Kubernetes SIGs) diseñada para automatizar el despliegue, la configuración y el mantenimiento de clústeres de Kubernetes listos para producción.
+Es una herramienta de código abierto (perteneciente al proyecto oficial de Kubernetes SIGs) diseñada para automatizar el despliegue, la configuración y el mantenimiento de clústeres de Kubernetes listos para producción.
 
 ## 3. Stack (Los ingredientes)
 !!! note "Herramientas"
